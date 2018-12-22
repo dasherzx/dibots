@@ -243,7 +243,7 @@ export class VegaBaseView {
 
   /**
    * @param {object} query Elastic Query DSL snippet, as used in the query DSL editor
-   * @param {string} [index] as defined in Kibana, or default if missing
+   * @param {string} [index] as defined in DiBots, or default if missing
    */
   async addFilterHandler(query, index) {
     const indexId = await this._findIndex(index);
@@ -253,7 +253,7 @@ export class VegaBaseView {
 
   /**
    * @param {object} query Elastic Query DSL snippet, as used in the query DSL editor
-   * @param {string} [index] as defined in Kibana, or default if missing
+   * @param {string} [index] as defined in DiBots, or default if missing
    */
   async removeFilterHandler(query, index) {
     const indexId = await this._findIndex(index);

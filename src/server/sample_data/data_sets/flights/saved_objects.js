@@ -218,7 +218,7 @@ export const savedObjects = [
     "version": 1,
     "attributes": {
       "title": "[Flights] Markdown Instructions",
-      "visState": "{\"title\":\"[Flights] Markdown Instructions\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"openLinksInNewTab\":true,\"markdown\":\"### Sample Flight data\\nThis dashboard contains sample data for you to play with. You can view it, search it, and interact with the visualizations. For more information about Kibana, check our [docs](https://www.elastic.co/guide/en/kibana/current/index.html).\"},\"aggs\":[]}",
+      "visState": "{\"title\":\"[Flights] Markdown Instructions\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"openLinksInNewTab\":true,\"markdown\":\"### Sample Flight data\\nThis dashboard contains sample data for you to play with. You can view it, search it, and interact with the visualizations. For more information about DiBots, check our [docs](https://www.elastic.co/guide/en/kibana/current/index.html).\"},\"aggs\":[]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,

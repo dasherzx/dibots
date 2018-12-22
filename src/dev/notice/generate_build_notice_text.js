@@ -22,7 +22,7 @@ import { generateNodeNoticeText } from './generate_node_notice_text';
 
 /**
  *  When given a list of packages and the directory to the
- *  node distribution that will be shipping with Kibana,
+ *  node distribution that will be shipping with DiBots,
  *  generates the text for NOTICE.txt
  *
  *  @param  {Object} [options={}]

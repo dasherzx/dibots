@@ -88,7 +88,7 @@ exports[`Table should render normally 1`] = `
           Object {
             "actions": Array [
               Object {
-                "description": "View this saved object within Kibana",
+                "description": "View this saved object within DiBots",
                 "icon": "eye",
                 "name": "In app",
                 "onClick": [Function],

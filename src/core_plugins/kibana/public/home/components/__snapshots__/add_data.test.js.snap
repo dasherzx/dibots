@@ -24,7 +24,7 @@ exports[`apmUiEnabled 1`] = `
       >
         <h3>
           <FormattedMessage
-            defaultMessage="Add Data to Kibana"
+            defaultMessage="Add Data to DiBots"
             id="kbn.home.addData.addDataToKibanaTitle"
             values={Object {}}
           />
@@ -317,7 +317,7 @@ exports[`isNewKibanaInstance 1`] = `
       >
         <h3>
           <FormattedMessage
-            defaultMessage="Add Data to Kibana"
+            defaultMessage="Add Data to DiBots"
             id="kbn.home.addData.addDataToKibanaTitle"
             values={Object {}}
           />
@@ -574,7 +574,7 @@ exports[`mlEnabled 1`] = `
       >
         <h3>
           <FormattedMessage
-            defaultMessage="Add Data to Kibana"
+            defaultMessage="Add Data to DiBots"
             id="kbn.home.addData.addDataToKibanaTitle"
             values={Object {}}
           />
@@ -907,7 +907,7 @@ exports[`render 1`] = `
       >
         <h3>
           <FormattedMessage
-            defaultMessage="Add Data to Kibana"
+            defaultMessage="Add Data to DiBots"
             id="kbn.home.addData.addDataToKibanaTitle"
             values={Object {}}
           />

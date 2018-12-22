@@ -27,14 +27,14 @@ describe('String Format', function () {
     const string = new StringFormat({
       transform: 'lower'
     });
-    expect(string.convert('Kibana')).to.be('kibana');
+    expect(string.convert('DiBots')).to.be('kibana');
   });
 
   it('convert a string to upper case', function () {
     const string = new StringFormat({
       transform: 'upper'
     });
-    expect(string.convert('Kibana')).to.be('KIBANA');
+    expect(string.convert('DiBots')).to.be('KIBANA');
   });
 
   it('decode a base64 string', function () {

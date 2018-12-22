@@ -196,7 +196,7 @@ class TutorialDirectoryUi extends React.Component {
             <h1>
               <FormattedMessage
                 id="kbn.home.tutorial.addDataTitle"
-                defaultMessage="Add Data to Kibana"
+                defaultMessage="Add Data to DiBots"
               />
             </h1>
           </EuiTitle>

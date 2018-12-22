@@ -173,7 +173,7 @@ const AddDataUi = ({ apmUiEnabled, isNewKibanaInstance, intl, mlEnabled }) => {
             <h3>
               <FormattedMessage
                 id="kbn.home.addData.addDataToKibanaTitle"
-                defaultMessage="Add Data to Kibana"
+                defaultMessage="Add Data to DiBots"
               />
             </h3>
           </EuiTitle>

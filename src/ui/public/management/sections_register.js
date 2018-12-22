@@ -35,7 +35,7 @@ management.register('elasticsearch', {
 });
 
 management.register('kibana', {
-  display: 'Kibana',
+  display: 'DiBots',
   order: 30,
   icon: 'logoKibana',
 });

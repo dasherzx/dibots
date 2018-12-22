@@ -19,7 +19,7 @@
 
 /*
  * The UI and related logic for the welcome screen that *should* show only
- * when it is enabled (the default) and there is no Kibana-consumed data
+ * when it is enabled (the default) and there is no DiBots-consumed data
  * in Elasticsearch.
  */
 
@@ -70,7 +70,7 @@ export class Welcome extends React.Component {
             </span>
             <EuiTitle size="l" className="homWelcome__title">
               <h1>
-                <FormattedMessage id="kbn.home.welcomeTitle" defaultMessage="Welcome to Kibana"/>
+                <FormattedMessage id="kbn.home.welcomeTitle" defaultMessage="Welcome to DiBots"/>
               </h1>
             </EuiTitle>
             <EuiText size="s" color="subdued" className="homWelcome__subtitle">

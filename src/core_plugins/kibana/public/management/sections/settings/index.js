@@ -87,7 +87,7 @@ FeatureCatalogueRegistryProvider.register(() => {
   return {
     id: 'advanced_settings',
     title: 'Advanced Settings',
-    description: 'Directly edit settings that control behavior in Kibana.',
+    description: 'Directly edit settings that control behavior in DiBots.',
     icon: 'advancedSettingsApp',
     path: '/app/kibana#/management/kibana/settings',
     showOnHomePage: false,

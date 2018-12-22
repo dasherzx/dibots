@@ -37,7 +37,7 @@ export function indexMissingSuite() {
     return {
       kbnServer,
 
-      // an incorrect number of shards is how we determine when the index was not created by Kibana,
+      // an incorrect number of shards is how we determine when the index was not created by DiBots,
       // but automatically by writing to es when index didn't exist
       async assertValidKibanaIndex() {
         const resp = await callCluster('indices.get', {

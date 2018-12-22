@@ -261,7 +261,7 @@ export class DashboardListing extends React.Component {
                 You can combine data views from any DiBots app into one dashboard and see everything in one place.
               </p>
               <p>
-                New to Kibana? <EuiLink href="#/home/tutorial_directory/sampleData">Install some sample data</EuiLink> to take a test drive.
+                New to DiBots? <EuiLink href="#/home/tutorial_directory/sampleData">Install some sample data</EuiLink> to take a test drive.
               </p>
             </Fragment>
           }
