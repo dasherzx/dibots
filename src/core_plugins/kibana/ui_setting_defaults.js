@@ -53,7 +53,7 @@ export function getUiSettingDefaults() {
     'search:queryLanguage': {
       name: 'Query language',
       value: 'lucene',
-      description: `Query language used by the query bar. Kuery is an experimental new language built specifically for Kibana.`,
+      description: `Query language used by the query bar. Kuery is an experimental new language built specifically for DiBots.`,
       type: 'select',
       options: ['lucene', 'kuery']
     },
@@ -198,7 +198,7 @@ export function getUiSettingDefaults() {
       type: 'number',
       description: `Controls the <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-multi-search.html"
         target="_blank" rel="noopener noreferrer">max_concurrent_shard_requests</a>
-        setting used for _msearch requests sent by Kibana. Set to 0 to disable this config and use the Elasticsearch default.`,
+        setting used for _msearch requests sent by DiBots. Set to 0 to disable this config and use the Elasticsearch default.`,
       category: ['search'],
     },
     'fields:popularLimit': {

@@ -35,7 +35,7 @@
  * subscribers).
  *
  * That set of query parameters is then sent to elasticsearch. This is how the filter hierarchy
- * works in Kibana.
+ * works in DiBots.
  *
  * Visualize, starting from a new search:
  *

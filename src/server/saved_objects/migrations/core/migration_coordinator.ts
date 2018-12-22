@@ -31,7 +31,7 @@
  * or someone tampering with the DiBots alias. In these cases, it's not clear that we should
  * just migrate data into an existing index. Such an action could result in data loss. Instead,
  * we should probably fail, and the DiBots sys-admin should clean things up before relaunching
- * Kibana.
+ * DiBots.
 */
 
 import _ from 'lodash';
@@ -99,7 +99,7 @@ function handleIndexExists(error: any, log: Logger) {
     `Another DiBots instance appears to be migrating the index. Waiting for ` +
       `that migration to complete. If no other DiBots instance is attempting ` +
       `migrations, you can get past this message by deleting index ${index} and ` +
-      `restarting Kibana.`
+      `restarting DiBots.`
   );
 
   return true;

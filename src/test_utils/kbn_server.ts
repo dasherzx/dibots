@@ -111,7 +111,7 @@ export function createRootWithCorePlugins(settings = {}) {
 }
 
 /**
- * Returns `kbnServer` instance used in the "legacy" Kibana.
+ * Returns `kbnServer` instance used in the "legacy" DiBots.
  * @param root
  */
 export function getKbnServer(root: Root) {

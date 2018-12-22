@@ -90,7 +90,7 @@ describe('plugins/elasticsearch', () => {
     });
 
     it('throws an error with a single node that is out of date', async () => {
-      // 5.0.0 ES is too old to work with a 5.1.0 version of Kibana.
+      // 5.0.0 ES is too old to work with a 5.1.0 version of DiBots.
       setNodes('5.1.0', '5.2.0', '5.0.0');
       try {
         await ensureEsVersion(server, KIBANA_VERSION);

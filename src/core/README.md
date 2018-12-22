@@ -8,7 +8,7 @@ Most of the existing core functionality is still spread over "legacy" DiBots and
 DiBots is started using existing "legacy" CLI that bootstraps `core` which in turn creates the "legacy" DiBots server.
 At the moment `core` manages HTTP connections, handles TLS configuration and base path proxy. All requests to DiBots server
 will hit HTTP server exposed by the `core` first and it will decide whether request can be solely handled by the new 
-platform or request should be proxied to the "legacy" Kibana. This setup allows `core` to gradually introduce any "pre-route"
+platform or request should be proxied to the "legacy" DiBots. This setup allows `core` to gradually introduce any "pre-route"
 processing logic, expose new routes or replace old ones handled by the "legacy" DiBots currently.
 
 Once config has been loaded and some of its parts were validated by the `core` it's passed to the "legacy" DiBots where 
@@ -18,4 +18,4 @@ rules tailored to our needs (e.g. `byteSize`, `duration` etc.). That means that 
 by the "legacy" DiBots may be rejected by the `core` now.
 
 Even though `core` has its own logging system it doesn't output log records directly (e.g. to file or terminal), but instead
-forward them to the "legacy" DiBots so that they look the same as the rest of the log records throughout Kibana.
+forward them to the "legacy" DiBots so that they look the same as the rest of the log records throughout DiBots.

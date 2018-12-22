@@ -106,7 +106,7 @@ export function SearchPollProvider(Private, Promise) {
           }
         })
         .catch(err => {
-          // If there was a problem, then kill Kibana.
+          // If there was a problem, then kill DiBots.
           fatalError(err);
         });
     };

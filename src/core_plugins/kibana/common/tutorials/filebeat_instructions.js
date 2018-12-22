@@ -186,7 +186,7 @@ export const createFilebeatInstructions = context => ({
       ],
       textPost: i18n.translate('kbn.common.tutorials.filebeatInstructions.config.osxTextPost', {
         defaultMessage: 'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of DiBots.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -215,7 +215,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       ],
       textPost: i18n.translate('kbn.common.tutorials.filebeatInstructions.config.debTextPost', {
         defaultMessage: 'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of DiBots.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -244,7 +244,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       ],
       textPost: i18n.translate('kbn.common.tutorials.filebeatInstructions.config.rpmTextPost', {
         defaultMessage: 'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of DiBots.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -273,7 +273,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       ],
       textPost: i18n.translate('kbn.common.tutorials.filebeatInstructions.config.windowsTextPost', {
         defaultMessage: 'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of DiBots.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',

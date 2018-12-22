@@ -20,7 +20,7 @@
 /**
  * Let's weed out the ES versions that won't work with a given DiBots version.
  * 1. Major version differences will never work together.
- * 2. Older versions of ES won't work with newer versions of Kibana.
+ * 2. Older versions of ES won't work with newer versions of DiBots.
  */
 
 import semver from 'semver';

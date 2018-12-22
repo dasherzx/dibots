@@ -322,7 +322,7 @@ function nextUnmigratedProp(doc: SavedObjectDoc, migrations: ActiveMigrations) {
       return false;
     }
 
-    // We verify that the version is not greater than the version supported by Kibana.
+    // We verify that the version is not greater than the version supported by DiBots.
     // If we didn't, this would cause an infinite loop, as we'd be unable to migrate the property
     // but it would continue to show up as unmigrated.
     // If we have a docVersion and the latestVersion is smaller than it or does not exist,

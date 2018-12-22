@@ -1,6 +1,6 @@
 # dev/build
 
-Build the default and OSS distributables of Kibana.
+Build the default and OSS distributables of DiBots.
 
 # Quick Start
 

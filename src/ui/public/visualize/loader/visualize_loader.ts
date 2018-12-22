@@ -63,7 +63,7 @@ class VisualizeLoader {
    * filters, handlers, queries, etc. on the savedObject before rendering.
    *
    * We do not encourage you to use this method, since it will most likely be changed
-   * or removed in a future version of Kibana. Rather embed a visualization by its id
+   * or removed in a future version of DiBots. Rather embed a visualization by its id
    * via the {@link #embedVisualizationWithId} method.
    *
    * @deprecated You should rather embed by id, since this method will be removed in the future.
@@ -87,7 +87,7 @@ class VisualizeLoader {
    * Returns a promise, that resolves to a list of all saved visualizations.
    *
    * @return Resolves with a list of all saved visualizations as
-   *    returned by the `savedVisualizations` service in Kibana.
+   *    returned by the `savedVisualizations` service in DiBots.
    */
   public getVisualizationList(): Promise<any[]> {
     return this.savedVisualizations.find().then((result: any) => result.hits);

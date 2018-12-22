@@ -117,7 +117,7 @@ export class LegacyService implements CoreService {
     const kbnServer: LegacyKbnServer = new KbnServer(config.toRaw(), {
       // If core HTTP service is run we'll receive internal server reference and
       // options that were used to create that server so that we can properly
-      // bridge with the "legacy" Kibana. If server isn't run (e.g. if process is
+      // bridge with the "legacy" DiBots. If server isn't run (e.g. if process is
       // managed by ClusterManager or optimizer) then we won't have that info,
       // so we can't start "legacy" server either.
       serverOptions:
