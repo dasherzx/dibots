@@ -22,7 +22,7 @@ import { buildProductionProjects } from '@kbn/pm';
 /**
  * High-level overview of how we enable shared packages in production:
  *
- * tl;dr We copy the packages directly into Kibana's `node_modules` folder,
+ * tl;dr We copy the packages directly into DiBots's. `node_modules` folder,
  * which means they will be available when `require(...)`d.
  *
  * During development we rely on `@kbn/pm` to find all the packages
@@ -47,7 +47,7 @@ import { buildProductionProjects } from '@kbn/pm';
  *
  * 1. Run the build for each package
  * 2. Copy all the packages into the `build/kibana` folder
- * 3. Replace `link:` dependencies with `file:` dependencies in both Kibana's
+ * 3. Replace `link:` dependencies with `file:` dependencies in both DiBots's.
  *    `package.json` and in all the dependencies. Yarn will then copy the
  *    sources of these dependencies into `node_modules` instead of setting up
  *    symlinks.

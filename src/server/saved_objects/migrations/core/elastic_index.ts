@@ -70,7 +70,7 @@ export async function fetchInfo(callCluster: CallCluster, index: string): Promis
 
 /**
  * Creates a reader function that serves up batches of documents from the index. We aren't using
- * an async generator, as that feature currently breaks Kibana's tooling.
+ * an async generator, as that feature currently breaks DiBots's. tooling.
  *
  * @param {CallCluster} callCluster - The elastic search connection
  * @param {string} - The index to be read from

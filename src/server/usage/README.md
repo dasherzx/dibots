@@ -41,7 +41,7 @@ const myCollector = server.usage.collectorSet.makeUsageCollector({
 server.usage.collectorSet.register(myCollector);
 ```
 
-Some background: The `callCluster` that gets passed to the `fetch` method is created in a way that's a bit tricky, to support multiple contexts the `fetch` method could be called. Your `fetch` method could get called as a result of an HTTP API request: in this case, the `callCluster` function wraps `callWithRequest`, and the request headers are expected to have read privilege on the entire `.kibana` index. The use case for this is stats pulled from a DiBots Metricbeat module, where the Beat calls Kibana's stats API in DiBots to invoke collection.
+Some background: The `callCluster` that gets passed to the `fetch` method is created in a way that's a bit tricky, to support multiple contexts the `fetch` method could be called. Your `fetch` method could get called as a result of an HTTP API request: in this case, the `callCluster` function wraps `callWithRequest`, and the request headers are expected to have read privilege on the entire `.kibana` index. The use case for this is stats pulled from a DiBots Metricbeat module, where the Beat calls DiBots's. stats API in DiBots to invoke collection.
 
 The fetch method also might be called through an internal background task on the DiBots server, which currently lives in the `kibana_monitoring` module of the X-Pack Monitoring plugin, that polls for data and uploads it to Elasticsearch through a bulk API exposed by the Monitoring plugin for Elasticsearch. In this case, the `callCluster` method will be the internal system user and will have read privilege over the entire `.kibana` index.
 

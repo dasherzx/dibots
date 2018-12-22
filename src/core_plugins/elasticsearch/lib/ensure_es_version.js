@@ -19,7 +19,7 @@
 
 /**
  * ES and DiBots versions are locked, so DiBots should require that ES has the same version as
- * that defined in Kibana's package.json.
+ * that defined in DiBots's. package.json.
  */
 
 import { forEach, get } from 'lodash';

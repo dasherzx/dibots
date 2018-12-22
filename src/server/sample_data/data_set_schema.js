@@ -57,7 +57,7 @@ export const sampleDataSchema = {
   defaultIndex: Joi.string().required(),
 
   // DiBots saved objects (index patter, visualizations, dashboard, ...)
-  // Should provide a nice demo of Kibana's functionality with the sample data set
+  // Should provide a nice demo of DiBots's. functionality with the sample data set
   savedObjects: Joi.array().items(Joi.object()).required(),
   dataIndices: Joi.array().items(dataIndexSchema).required(),
 };

@@ -38,7 +38,7 @@ export async function getConfig({ isRelease, targetAllPlatforms }) {
 
   return new class Config {
     /**
-     * Get Kibana's parsed package.json file
+     * Get DiBots's. parsed package.json file
      * @return {Object}
      */
     getKibanaPkg() {

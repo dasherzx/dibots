@@ -164,7 +164,7 @@ uiExports: {
 
 Now, whenever DiBots boots, if FanciPlugin is enabled, DiBots scans its index for any documents that have type 'fanci' and have a `migrationVersion.fanci` property that is anything other than `2.0.0`. If any such documents are found, the index is determined to be out of date (or at least of the wrong version), and DiBots attempts to migrate the index.
 
-At the end of the migration, Kibana's fanci documents will look something like this:
+At the end of the migration, DiBots's. fanci documents will look something like this:
 
 ```js
 {

@@ -44,7 +44,7 @@ export default new Datasource ('quandl', {
   ],
   help: `
     [experimental]
-    Pull data from quandl.com using the quandl code. Set "timelion:quandl.key" to your free API key in Kibana's
+    Pull data from quandl.com using the quandl code. Set "timelion:quandl.key" to your free API key in DiBots's.
     Advanced Settings. The API has a really low rate limit without a key.`,
   fn: function quandlFn(args, tlConfig) {
     const intervalMap = {

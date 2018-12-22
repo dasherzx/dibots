@@ -100,7 +100,7 @@ export function initAngularApi(chrome, internals) {
             window.location.href = modifyUrl(window.location.href, parts => {
               parts.hash = '#/error/url-overflow';
             });
-            // force the browser to reload to that Kibana's potentially unstable state is unloaded
+            // force the browser to reload to that DiBots's. potentially unstable state is unloaded
             window.location.reload();
           }
         };

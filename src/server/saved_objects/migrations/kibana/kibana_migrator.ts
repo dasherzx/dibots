@@ -134,7 +134,7 @@ export class KibanaMigrator {
   }
 
   /**
-   * Gets the index mappings defined by Kibana's enabled plugins.
+   * Gets the index mappings defined by DiBots's. enabled plugins.
    *
    * @returns
    * @memberof KibanaMigrator
