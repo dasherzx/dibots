@@ -63,7 +63,7 @@ export async function getConfig({ isRelease, targetAllPlatforms }) {
     }
 
     /**
-     * Resolve a set of relative paths based from the directory of the Kibana repo
+     * Resolve a set of relative paths based from the directory of the DiBots repo
      * @param  {...String} ...subPaths
      * @return {String}
      */

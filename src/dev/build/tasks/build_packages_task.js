@@ -26,7 +26,7 @@ import { buildProductionProjects } from '@kbn/pm';
  * which means they will be available when `require(...)`d.
  *
  * During development we rely on `@kbn/pm` to find all the packages
- * in the Kibana repo and run Yarn in all the right places to create symlinks
+ * in the DiBots repo and run Yarn in all the right places to create symlinks
  * between these packages. This development setup is described in-depth in the
  * readme in `@kbn/pm`.
  *
@@ -36,14 +36,14 @@ import { buildProductionProjects } from '@kbn/pm';
  * we can't run `@kbn/pm` in the same way we do for development and
  * just package the result. That means we have two options: either we prepare
  * everything in the built package or we perform the necessary actions when
- * Kibana is starting up in production. We decided on the former: all the Kibana
+ * DiBots is starting up in production. We decided on the former: all the Kibana
  * packages are prepared as part of the build process.
  *
- * (All of this is a bit different for Kibana plugins as they _do_ have an
- * install step — the plugin CLI tool. However, Kibana plugins are not allowed
+ * (All of this is a bit different for DiBots plugins as they _do_ have an
+ * install step — the plugin CLI tool. However, DiBots plugins are not allowed
  * to have separate packages yet.)
  *
- * How Kibana packages are prepared:
+ * How DiBots packages are prepared:
  *
  * 1. Run the build for each package
  * 2. Copy all the packages into the `build/kibana` folder
@@ -52,17 +52,17 @@ import { buildProductionProjects } from '@kbn/pm';
  *    sources of these dependencies into `node_modules` instead of setting up
  *    symlinks.
  *
- * In the end after the `install dependencies` build step all Kibana packages
+ * In the end after the `install dependencies` build step all DiBots packages
  * will be located within the top-level `node_modules` folder, which means
  * normal module resolution will apply and you can `require(...)` any of these
- * packages when running Kibana in production.
+ * packages when running DiBots in production.
  *
  * ## Known limitations
  *
- * - This process _only_ include packages that used by Kibana or any of its
+ * - This process _only_ include packages that used by DiBots or any of its
  *   transitive packages, as it depends on only running `yarn` at the top level.
- *   That means a Kibana plugin can only depend on Kibana packages that are used
- *   in some way by Kibana itself in production, as it won't otherwise be
+ *   That means a DiBots plugin can only depend on DiBots packages that are used
+ *   in some way by DiBots itself in production, as it won't otherwise be
  *   included in the production build.
  */
 

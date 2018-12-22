@@ -37,7 +37,7 @@ export function formatAngularHttpError(error: AngularHttpError) {
     // status = -1 indicates that the request was failed to reach the server
     return (
       'An HTTP request has failed to connect. ' +
-      'Please check if the Kibana server is running and that your browser has a working connection, ' +
+      'Please check if the DiBots server is running and that your browser has a working connection, ' +
       'or contact your system administrator.'
     );
   }

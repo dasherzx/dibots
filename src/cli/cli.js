@@ -28,7 +28,7 @@ const program = new Command('bin/kibana');
 program
   .version(pkg.version)
   .description(
-    'Kibana is an open source (Apache Licensed), browser ' +
+    'DiBots is an open source (Apache Licensed), browser ' +
     'based analytics and search dashboard for Elasticsearch.'
   );
 

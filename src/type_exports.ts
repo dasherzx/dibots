@@ -18,10 +18,10 @@
  */
 
 /**
- * This file re-exports only those Kibana types that we'd like plugins to have access to.
+ * This file re-exports only those DiBots types that we'd like plugins to have access to.
  *
  * Generated types are referenced from the `types` field of the Kibana's `package.json`, so
- * that plugins can just reference Kibana root folder to access all required types.
+ * that plugins can just reference DiBots root folder to access all required types.
  *
  * Here is an example of how plugin can use these types assuming it is located
  * in one of the known plugin locations (kibana/plugins/* or kibana-extra/*):

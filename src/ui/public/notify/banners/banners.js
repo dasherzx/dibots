@@ -121,6 +121,6 @@ export class Banners {
 }
 
 /**
- * A singleton instance meant to represent all Kibana banners.
+ * A singleton instance meant to represent all DiBots banners.
  */
 export const banners = new Banners();

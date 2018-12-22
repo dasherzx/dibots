@@ -83,7 +83,7 @@ export class SavedObjectsClient {
    * ### 503s from missing index
    *
    * Unlike all other methods, create requests are supposed to succeed even when
-   * the Kibana index does not exist because it will be automatically created by
+   * the DiBots index does not exist because it will be automatically created by
    * elasticsearch. When that is not the case it is because Elasticsearch's
    * `action.auto_create_index` setting prevents it from being created automatically
    * so we throw a special 503 with the intention of informing the user that their

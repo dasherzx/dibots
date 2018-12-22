@@ -49,7 +49,7 @@ export const CallOuts = ({
           <FormattedMessage
             id="kbn.management.editIndexPattern.scripted.deprecationLangLabel.deprecationLangDetail"
             defaultMessage="The following deprecated languages are in use: {deprecatedLangsInUse}. Support for these languages will be
-            removed in the next major version of Kibana and Elasticsearch. Convert you scripted fields to {link} to avoid any problems."
+            removed in the next major version of DiBots and Elasticsearch. Convert you scripted fields to {link} to avoid any problems."
             values={{
               deprecatedLangsInUse: deprecatedLangsInUse.join(', '),
               link: (

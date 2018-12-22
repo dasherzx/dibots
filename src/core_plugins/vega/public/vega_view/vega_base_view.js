@@ -337,7 +337,7 @@ export class VegaBaseView {
   setDebugValues(view, spec, vlspec) {
     if (window) {
       if (window.VEGA_DEBUG === undefined && console) {
-        console.log('%cWelcome to Kibana Vega Plugin!', 'font-size: 16px; font-weight: bold;');
+        console.log('%cWelcome to DiBots Vega Plugin!', 'font-size: 16px; font-weight: bold;');
         console.log('You can access the Vega view with VEGA_DEBUG. ' +
           'Learn more at https://vega.github.io/vega/docs/api/debugging/.');
       }

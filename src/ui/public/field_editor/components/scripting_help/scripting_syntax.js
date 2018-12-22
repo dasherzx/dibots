@@ -40,7 +40,7 @@ export const ScriptingSyntax = () => (
       <p>
         <FormattedMessage
           id="common.ui.fieldEditor.syntax.defaultLabel.defaultDetail"
-          defaultMessage="By default, Kibana scripted fields use {painless}, a simple and secure scripting language designed
+          defaultMessage="By default, DiBots scripted fields use {painless}, a simple and secure scripting language designed
           specifically for use with Elasticsearch, to access values in the document use the following format:"
           values={{
             painless: (
@@ -90,7 +90,7 @@ export const ScriptingSyntax = () => (
       <p>
         <FormattedMessage
           id="common.ui.fieldEditor.syntax.kibanaLabel"
-          defaultMessage="Kibana currently imposes one special limitation on the painless scripts you write. They cannot contain named
+          defaultMessage="DiBots currently imposes one special limitation on the painless scripts you write. They cannot contain named
           functions."
         />
       </p>

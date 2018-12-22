@@ -92,7 +92,7 @@ describe('RangeFilterManager', function () {
       expect(value.max).to.be(3);
     });
 
-    test('should return undefined when filter value can not be extracted from Kibana filter', function () {
+    test('should return undefined when filter value can not be extracted from DiBots filter', function () {
       filterManager.setMockFilters([
         {
           range: {

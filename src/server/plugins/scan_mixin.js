@@ -76,7 +76,7 @@ export async function scanMixin(kbnServer, server, config) {
         const name = spec.getId();
         const pluginVersion = spec.getExpectedKibanaVersion();
         const kibanaVersion = config.get('pkg.version');
-        return `Plugin "${name}" was disabled because it expected Kibana version "${pluginVersion}", and found "${kibanaVersion}".`;
+        return `Plugin "${name}" was disabled because it expected DiBots version "${pluginVersion}", and found "${kibanaVersion}".`;
       }),
       distinct(),
       tap(message => {

@@ -20,8 +20,8 @@
 /**
  * Autoload this file if we want some of the top level settings applied to a plugin.
  * Currently this file makes sure the following settings are applied globally:
- * - dateFormat:tz (meaning the Kibana time zone will be used in your plugin)
- * - dateFormat:dow (meaning the Kibana configured start of the week will be used in your plugin)
+ * - dateFormat:tz (meaning the DiBots time zone will be used in your plugin)
+ * - dateFormat:dow (meaning the DiBots configured start of the week will be used in your plugin)
  */
 
 import moment from 'moment-timezone';

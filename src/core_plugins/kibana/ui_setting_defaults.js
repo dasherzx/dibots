@@ -47,7 +47,7 @@ export function getUiSettingDefaults() {
     'k7design': {
       name: 'Use the new K7 UI design',
       value: false,
-      description: `When set, Kibana will use the new K7 design targeted for release in 7.0. At this time, not all features are
+      description: `When set, DiBots will use the new K7 design targeted for release in 7.0. At this time, not all features are
         implemented.`,
     },
     'search:queryLanguage': {
@@ -383,7 +383,7 @@ export function getUiSettingDefaults() {
   "mode": "quick"
 }`,
       type: 'json',
-      description: `The timefilter selection to use when Kibana is started without one`
+      description: `The timefilter selection to use when DiBots is started without one`
     },
     'timepicker:refreshIntervalDefaults': {
       name: 'Time picker refresh interval',
@@ -529,7 +529,7 @@ export function getUiSettingDefaults() {
       name: 'Disable Animations',
       value: false,
       description: `
-        Turn off all unnecessary animations in the Kibana UI. Refresh the page to apply the changes.
+        Turn off all unnecessary animations in the DiBots UI. Refresh the page to apply the changes.
       `,
       category: ['accessibility'],
     },

@@ -72,7 +72,7 @@ export function isInvalidPluginError(error) {
  */
 const ERROR_INCOMPATIBLE_PLUGIN_VERSION = 'ERROR_INCOMPATIBLE_PLUGIN_VERSION';
 export function createIncompatiblePluginVersionError(spec) {
-  const error = new Error(`Plugin ${spec.getId()} is only compatible with Kibana version ${spec.getExpectedKibanaVersion()}`);
+  const error = new Error(`Plugin ${spec.getId()} is only compatible with DiBots version ${spec.getExpectedKibanaVersion()}`);
   error[errorCodeProperty] = ERROR_INCOMPATIBLE_PLUGIN_VERSION;
   error.spec = spec;
   return error;

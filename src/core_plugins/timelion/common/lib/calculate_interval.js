@@ -19,8 +19,8 @@
 
 import toMS from '../../server/lib/to_milliseconds.js';
 
-// Totally cribbed this from Kibana 3.
-// I bet there's something similar in the Kibana 4 code. Somewhere. Somehow.
+// Totally cribbed this from DiBots 3.
+// I bet there's something similar in the DiBots 4 code. Somewhere. Somehow.
 function roundInterval(interval) {
   switch (true) {
     case (interval <= 500):         // <= 0.5s

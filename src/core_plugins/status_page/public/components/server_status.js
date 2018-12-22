@@ -43,7 +43,7 @@ const ServerState = ({
         <h2>
           <FormattedMessage
             id="statusPage.serverStatus.statusTitle"
-            defaultMessage="Kibana status is {kibanaStatus}"
+            defaultMessage="DiBots status is {kibanaStatus}"
             values={{
               kibanaStatus: (
                 <EuiBadge color={serverState.uiColor}>

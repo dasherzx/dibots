@@ -1,4 +1,4 @@
-## Kibana Testbed
+## DiBots Testbed
 
 Sometimes when developing for Kibana, it is useful to have an isolated routable space to demonstrate new functionality. This Testbed provides such a space.
 

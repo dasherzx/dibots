@@ -145,7 +145,7 @@ describe('params', function () {
       expect(output.params).to.have.property('time_zone', 'Europe/Kiev');
     });
 
-    it('should use the Kibana time_zone if no parameter specified', () => {
+    it('should use the DiBots time_zone if no parameter specified', () => {
       config.isDefault.withArgs('dateFormat:tz').returns(false);
       config.get.withArgs('dateFormat:tz').returns('Europe/Riga');
       const output = paramWriter.write({});

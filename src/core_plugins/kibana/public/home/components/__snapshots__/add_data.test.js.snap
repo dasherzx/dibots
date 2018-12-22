@@ -242,7 +242,7 @@ exports[`apmUiEnabled 1`] = `
           type="button"
         >
           <FormattedMessage
-            defaultMessage="Load a data set and a Kibana dashboard"
+            defaultMessage="Load a data set and a DiBots dashboard"
             id="kbn.home.addData.sampleDataLink"
             values={Object {}}
           />
@@ -499,7 +499,7 @@ exports[`isNewKibanaInstance 1`] = `
           type="button"
         >
           <FormattedMessage
-            defaultMessage="Load a data set and a Kibana dashboard"
+            defaultMessage="Load a data set and a DiBots dashboard"
             id="kbn.home.addData.sampleDataLink"
             values={Object {}}
           />
@@ -792,7 +792,7 @@ exports[`mlEnabled 1`] = `
           type="button"
         >
           <FormattedMessage
-            defaultMessage="Load a data set and a Kibana dashboard"
+            defaultMessage="Load a data set and a DiBots dashboard"
             id="kbn.home.addData.sampleDataLink"
             values={Object {}}
           />
@@ -1089,7 +1089,7 @@ exports[`render 1`] = `
           type="button"
         >
           <FormattedMessage
-            defaultMessage="Load a data set and a Kibana dashboard"
+            defaultMessage="Load a data set and a DiBots dashboard"
             id="kbn.home.addData.sampleDataLink"
             values={Object {}}
           />

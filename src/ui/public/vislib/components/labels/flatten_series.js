@@ -22,7 +22,7 @@ import _ from 'lodash';
 export function VislibComponentsLabelsFlattenSeriesProvider() {
 
   /*
-   * Accepts a Kibana data object with a rows or columns key
+   * Accepts a DiBots data object with a rows or columns key
    * and returns an array of flattened series values.
    */
   return function (obj) {

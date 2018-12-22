@@ -19,7 +19,7 @@
 
 export const appEntryTemplate = (bundle) => `
 /**
- * Kibana entry file
+ * DiBots entry file
  *
  * This is programmatically created and updated, do not modify
  *

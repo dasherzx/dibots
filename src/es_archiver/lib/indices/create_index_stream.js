@@ -27,7 +27,7 @@ import { deleteIndex } from './delete_index';
 export function createCreateIndexStream({ client, stats, skipExisting, log, kibanaUrl }) {
   const skipDocsFromIndices = new Set();
 
-  // If we're trying to import Kibana index docs, we need to ensure that
+  // If we're trying to import DiBots index docs, we need to ensure that
   // previous indices are removed so we're starting w/ a clean slate for
   // migrations. This only needs to be done once per archive load operation.
   // For the '.kibana' index, we will ignore 'skipExisting' and always load.

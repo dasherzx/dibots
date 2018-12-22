@@ -46,7 +46,7 @@ describe('plugins/elasticsearch', () => {
       sandbox.useFakeTimers();
       const COMPATIBLE_VERSION_NUMBER = '5.0.0';
 
-      // Stub the Kibana version instead of drawing from package.json.
+      // Stub the DiBots version instead of drawing from package.json.
       sandbox.stub(kibanaVersion, 'get').returns(COMPATIBLE_VERSION_NUMBER);
 
       // setup the plugin stub

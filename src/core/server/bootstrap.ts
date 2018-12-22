@@ -24,12 +24,12 @@ import { LegacyObjectToConfigAdapter } from './legacy_compat';
 import { Root } from './root';
 
 interface KibanaFeatures {
-  // Indicates whether we can run Kibana in a so called cluster mode in which
-  // Kibana is run as a "worker" process together with optimizer "worker" process
+  // Indicates whether we can run DiBots in a so called cluster mode in which
+  // DiBots is run as a "worker" process together with optimizer "worker" process
   // that are orchestrated by the "master" process (dev mode only feature).
   isClusterModeSupported: boolean;
 
-  // Indicates whether we can run Kibana without X-Pack plugin pack even if it's
+  // Indicates whether we can run DiBots without X-Pack plugin pack even if it's
   // installed (dev mode only feature).
   isOssModeSupported: boolean;
 

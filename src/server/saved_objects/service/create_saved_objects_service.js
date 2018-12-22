@@ -27,7 +27,7 @@ import { getRootPropertiesObjects } from '../../mappings';
 import { SavedObjectsClient } from './saved_objects_client';
 
 // The migrator here is (hopefully) temporary. We currently use the saved object API to perform
-// import / export from the Kibana UI. Import / export functionality needs to apply migrations to documents.
+// import / export from the DiBots UI. Import / export functionality needs to apply migrations to documents.
 // Eventually, we hope to build a first-class import / export API, at which point, we can
 // remove the migrator from the saved objects client and leave only document validation here.
 export function createSavedObjectsService(server, schema, serializer, migrator) {

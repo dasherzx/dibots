@@ -34,7 +34,7 @@ export function clientLogger(server) {
 
     trace(method, options, query, _response, statusCode) {
       /* Check if query logging is enabled
-       * It requires Kibana to be configured with verbose logging turned on. */
+       * It requires DiBots to be configured with verbose logging turned on. */
       if (this.logQueries) {
         const methodAndPath = `${method} ${options.path}`;
         const queryDsl = query ? query.trim() : '';

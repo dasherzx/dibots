@@ -113,7 +113,7 @@ export class EsArchiver {
   }
 
   /**
-   *  Delete any Kibana indices, and initialize the Kibana index as Kibana would do
+   *  Delete any DiBots indices, and initialize the DiBots index as DiBots would do
    *  on startup.
    *
    *  @return Promise

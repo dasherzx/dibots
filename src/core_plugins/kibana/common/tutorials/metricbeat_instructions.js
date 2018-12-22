@@ -107,7 +107,7 @@ export const createMetricbeatInstructions = context => ({
         defaultMessage: 'Start Metricbeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.metricbeatInstructions.start.osxTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         './metricbeat setup',
@@ -119,7 +119,7 @@ export const createMetricbeatInstructions = context => ({
         defaultMessage: 'Start Metricbeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.metricbeatInstructions.start.debTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         'sudo metricbeat setup',
@@ -131,7 +131,7 @@ export const createMetricbeatInstructions = context => ({
         defaultMessage: 'Start Metricbeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.metricbeatInstructions.start.rpmTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         'sudo metricbeat setup',
@@ -143,7 +143,7 @@ export const createMetricbeatInstructions = context => ({
         defaultMessage: 'Start Metricbeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.metricbeatInstructions.start.windowsTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         'PS C:\\Program Files\\Metricbeat> metricbeat.exe setup',

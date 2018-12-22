@@ -194,7 +194,7 @@ You can use \`config.get("${key}", defaultValue)\`, which will just return
   private assertUpdateAllowed(key: string) {
     if (this.isOverridden(key)) {
       throw new Error(
-        `Unable to update "${key}" because its value is overridden by the Kibana server`
+        `Unable to update "${key}" because its value is overridden by the DiBots server`
       );
     }
   }

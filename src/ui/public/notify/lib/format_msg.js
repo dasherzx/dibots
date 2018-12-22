@@ -47,7 +47,7 @@ export function formatMsg(err, source) {
     if (err.status === -1) {
       // status = -1 indicates that the request was failed to reach the server
       message += 'An HTTP request has failed to connect. ' +
-             'Please check if the Kibana server is running and that your browser has a working connection, ' +
+             'Please check if the DiBots server is running and that your browser has a working connection, ' +
              'or contact your system administrator.';
     } else {
       message += 'Error ' + err.status + ' ' + err.statusText + ': ' + err.data.message;

@@ -75,7 +75,7 @@ export class HttpServer {
     );
 
     // Return server instance with the connection options so that we can properly
-    // bridge core and the "legacy" Kibana internally. Once this bridge isn't
+    // bridge core and the "legacy" DiBots internally. Once this bridge isn't
     // needed anymore we shouldn't return anything from this method.
     return { server: this.server, options: serverOptions };
   }

@@ -18,7 +18,7 @@
  */
 
 /*
- * This file contains the logic for managing the Kibana index version
+ * This file contains the logic for managing the DiBots index version
  * (the shape of the mappings and documents in the index).
  */
 
@@ -58,14 +58,14 @@ interface ElasticsearchPlugin {
 }
 
 /**
- * Manages the shape of mappings and documents in the Kibana index.
+ * Manages the shape of mappings and documents in the DiBots index.
  *
  * @export
  * @class KibanaMigrator
  */
 export class KibanaMigrator {
   /**
-   * Migrates the mappings and documents in the Kibana index. This will run only
+   * Migrates the mappings and documents in the DiBots index. This will run only
    * once and subsequent calls will return the result of the original call.
    *
    * @returns
@@ -115,7 +115,7 @@ export class KibanaMigrator {
    * Creates an instance of KibanaMigrator.
    *
    * @param opts
-   * @prop {KbnServer} kbnServer - An instance of the Kibana server object.
+   * @prop {KbnServer} kbnServer - An instance of the DiBots server object.
    * @memberof KibanaMigrator
    */
   constructor({ kbnServer }: { kbnServer: KbnServer }) {

@@ -86,7 +86,7 @@ export function initAngularApi(chrome, internals) {
           try {
             if (urlOverflow.check($location.absUrl()) <= URL_LIMIT_WARN_WITHIN) {
               toastNotifications.addWarning({
-                title: 'The URL is big and Kibana might stop working',
+                title: 'The URL is big and DiBots might stop working',
                 text: (
                   <Fragment>
                     Either enable the <code>state:storeInSessionStorage</code> option

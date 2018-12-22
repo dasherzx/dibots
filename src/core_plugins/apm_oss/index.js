@@ -26,7 +26,7 @@ export default function apmOss(kibana) {
         // enable plugin
         enabled: Joi.boolean().default(true),
 
-        // Kibana Index pattern
+        // DiBots Index pattern
         indexPattern: Joi.string().default('apm-*'),
 
         // ES Indices

@@ -26,7 +26,7 @@ import { add } from './add';
 import Logger from '../cli_plugin/lib/logger';
 import * as prompt from '../server/utils/prompt';
 
-describe('Kibana keystore', () => {
+describe('DiBots keystore', () => {
   describe('add', () => {
     const sandbox = sinon.createSandbox();
 
@@ -55,7 +55,7 @@ describe('Kibana keystore', () => {
 
     it('returns an error for a nonexistent keystore', async () => {
       const keystore = new Keystore('/data/nonexistent.keystore');
-      const message = 'ERROR: Kibana keystore not found. Use \'create\' command to create one.';
+      const message = 'ERROR: DiBots keystore not found. Use \'create\' command to create one.';
 
       await add(keystore, 'foo');
 

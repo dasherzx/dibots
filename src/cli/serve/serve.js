@@ -178,7 +178,7 @@ export default function (program) {
 
   if (XPACK_OPTIONAL) {
     command
-      .option('--oss', 'Start Kibana without X-Pack');
+      .option('--oss', 'Start DiBots without X-Pack');
   }
 
   if (CAN_CLUSTER) {

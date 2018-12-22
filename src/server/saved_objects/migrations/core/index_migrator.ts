@@ -39,7 +39,7 @@ export class IndexMigrator {
   }
 
   /**
-   * Migrates the index, or, if another Kibana instance appears to be running the migration,
+   * Migrates the index, or, if another DiBots instance appears to be running the migration,
    * waits for the migration to complete.
    *
    * @returns {Promise<MigrationResult>}

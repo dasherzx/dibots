@@ -22,11 +22,11 @@ import { get } from 'lodash';
 const snapshotRegex = /-snapshot/i;
 
 /**
- * This provides a meta data attribute along with Kibana stats.
+ * This provides a meta data attribute along with DiBots stats.
  *
- * @param {Object} kbnServer manager of Kibana services - see `src/server/kbn_server` in Kibana core
+ * @param {Object} kbnServer manager of DiBots services - see `src/server/kbn_server` in DiBots core
  * @param {Object} config Server config
- * @param {String} host Kibana host
+ * @param {String} host DiBots host
  * @return {Object} The object containing a "kibana" field and source instance details.
  */
 export function getKibanaInfoForStats(server, kbnServer) {

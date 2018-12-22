@@ -81,7 +81,7 @@ exports[`once LegacyService is started with connection info proxy route responds
 Object {
   "body": Array [
     Array [
-      "Kibana server is not ready yet",
+      "DiBots server is not ready yet",
     ],
   ],
   "code": Array [

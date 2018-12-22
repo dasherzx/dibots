@@ -58,7 +58,7 @@ export class OptionsTab extends Component {
           <EuiSwitch
             label={<FormattedMessage
               id="inputControl.editor.optionsTab.updateFilterLabel"
-              defaultMessage="Update Kibana filters on each change"
+              defaultMessage="Update DiBots filters on each change"
             />}
             checked={this.props.editorState.params.updateFiltersOnChange}
             onChange={this.handleUpdateFiltersChange}

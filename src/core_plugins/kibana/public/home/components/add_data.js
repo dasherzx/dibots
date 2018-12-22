@@ -209,7 +209,7 @@ const AddDataUi = ({ apmUiEnabled, isNewKibanaInstance, intl, mlEnabled }) => {
             >
               <FormattedMessage
                 id="kbn.home.addData.sampleDataLink"
-                defaultMessage="Load a data set and a Kibana dashboard"
+                defaultMessage="Load a data set and a DiBots dashboard"
               />
             </EuiLink>
           </EuiText>

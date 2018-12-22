@@ -67,7 +67,7 @@ export const AdvancedOptionsComponent = ({
           />}
           helpText={<FormattedMessage
             id="kbn.management.createIndexPattern.stepTime.options.patternLabel"
-            defaultMessage="Kibana will provide a unique identifier for each index pattern. If you do not want to use this unique ID,
+            defaultMessage="DiBots will provide a unique identifier for each index pattern. If you do not want to use this unique ID,
             enter a custom one."
           />}
         >

@@ -26,7 +26,7 @@ export function kibanaMetricsSpecProvider(server, context) {
   return {
     id: 'kibanaMetrics',
     name: i18n.translate('kbn.server.tutorials.kibanaMetrics.nameTitle', {
-      defaultMessage: 'Kibana metrics',
+      defaultMessage: 'DiBots metrics',
     }),
     isBeta: true,
     category: TUTORIAL_CATEGORY.METRICS,

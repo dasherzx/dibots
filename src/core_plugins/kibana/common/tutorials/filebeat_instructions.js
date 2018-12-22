@@ -120,7 +120,7 @@ export const createFilebeatInstructions = context => ({
         defaultMessage: 'Start Filebeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.filebeatInstructions.start.osxTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         './filebeat setup',
@@ -132,7 +132,7 @@ export const createFilebeatInstructions = context => ({
         defaultMessage: 'Start Filebeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.filebeatInstructions.start.debTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         'sudo filebeat setup',
@@ -144,7 +144,7 @@ export const createFilebeatInstructions = context => ({
         defaultMessage: 'Start Filebeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.filebeatInstructions.start.rpmTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         'sudo filebeat setup',
@@ -156,7 +156,7 @@ export const createFilebeatInstructions = context => ({
         defaultMessage: 'Start Filebeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.filebeatInstructions.start.windowsTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         'PS C:\\Program Files\\Filebeat> filebeat.exe setup',

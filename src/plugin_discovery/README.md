@@ -1,6 +1,6 @@
 # Plugin Discovery
 
-The plugin discovery module defines the core plugin loading logic used by the Kibana server. It exports functions for
+The plugin discovery module defines the core plugin loading logic used by the DiBots server. It exports functions for
 
 
 ## `findPluginSpecs(settings, [config])`

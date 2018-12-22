@@ -43,7 +43,7 @@ export function savedObjectsMixin(kbnServer, server) {
   if (!kbnServer.pluginSpecs.some(p => p.getId() === 'kibana')) {
     server.log(
       ['warning', 'saved-objects'],
-      `Saved Objects uninitialized because the Kibana plugin is disabled.`
+      `Saved Objects uninitialized because the DiBots plugin is disabled.`
     );
     return;
   }

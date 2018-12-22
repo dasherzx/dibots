@@ -61,7 +61,7 @@ describe('config/deprecation warnings mixin', function () {
     proc.on('exit', (code) => {
       proc = null;
       if (code > 0) {
-        reject(new Error(`Kibana server exited with ${code} -- stdout:\n\n${stdio}\n`));
+        reject(new Error(`DiBots server exited with ${code} -- stdout:\n\n${stdio}\n`));
       } else {
         resolve();
       }

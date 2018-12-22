@@ -43,7 +43,7 @@ var ignore = [
 ];
 
 if (global.__BUILT_WITH_BABEL__) {
-  // when building the Kibana source we replace the statement
+  // when building the DiBots source we replace the statement
   // `global.__BUILT_WITH_BABEL__` with the value `true` so that
   // when babel-register is required for the first time by users
   // it will exclude kibana's `src` directory.

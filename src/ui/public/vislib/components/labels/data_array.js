@@ -24,7 +24,7 @@ export function VislibComponentsLabelsDataArrayProvider(Private) {
   const flattenSeries = Private(VislibComponentsLabelsFlattenSeriesProvider);
 
   /*
-   * Accepts a Kibana data object and returns an array of values objects.
+   * Accepts a DiBots data object and returns an array of values objects.
   */
   return function (obj) {
     if (!_.isObject(obj) || !obj.rows && !obj.columns && !obj.series) {

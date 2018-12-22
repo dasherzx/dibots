@@ -65,14 +65,14 @@ interface Options {
 
 /**
  * Represents the pieces that make up a url in Kibana, offering some helpful functionality
- * for translating those pieces into absolute or relative urls. A Kibana url with a basePath
+ * for translating those pieces into absolute or relative urls. A DiBots url with a basePath
  * looks like this: http://localhost:5601/basePath/app/appId#/an/appPath?with=query&params
  *
  *  - basePath is "/basePath"
  *  - appId is "appId"
  *  - appPath is "/an/appPath?with=query&params"
  *
- * Almost all urls in Kibana should have this structure, including the "/app" portion in front of the appId
+ * Almost all urls in DiBots should have this structure, including the "/app" portion in front of the appId
  * (one exception is the login link).
  */
 export class KibanaParsedUrl {

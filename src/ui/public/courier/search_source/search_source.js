@@ -22,9 +22,9 @@
  *
  * @description A promise-based stream of search results that can inherit from other search sources.
  *
- * Because filters/queries in Kibana have different levels of persistence and come from different
+ * Because filters/queries in DiBots have different levels of persistence and come from different
  * places, it is important to keep track of where filters come from for when they are saved back to
- * the savedObject store in the Kibana index. To do this, we create trees of searchSource objects
+ * the savedObject store in the DiBots index. To do this, we create trees of searchSource objects
  * that can have associated query parameters (index, query, filter, etc) which can also inherit from
  * other searchSource objects.
  *

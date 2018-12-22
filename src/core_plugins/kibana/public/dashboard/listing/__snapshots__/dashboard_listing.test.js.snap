@@ -214,7 +214,7 @@ exports[`after fetch renders call to action when no dashboards exist 1`] = `
           body={
             <React.Fragment>
               <p>
-                You can combine data views from any Kibana app into one dashboard and see everything in one place.
+                You can combine data views from any DiBots app into one dashboard and see everything in one place.
               </p>
               <p>
                 New to Kibana? 

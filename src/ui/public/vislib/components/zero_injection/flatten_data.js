@@ -22,7 +22,7 @@ import _ from 'lodash';
 export function VislibComponentsZeroInjectionFlattenDataProvider() {
 
   /*
-   * Accepts a Kibana data object, flattens the data.series values array,
+   * Accepts a DiBots data object, flattens the data.series values array,
    * and returns an array of values objects.
    */
 

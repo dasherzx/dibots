@@ -36,7 +36,7 @@ const program = new Command('bin/kibana-keystore');
 
 program
   .version(pkg.version)
-  .description('A tool for managing settings stored in the Kibana keystore');
+  .description('A tool for managing settings stored in the DiBots keystore');
 
 createCli(program, keystore);
 listCli(program, keystore);

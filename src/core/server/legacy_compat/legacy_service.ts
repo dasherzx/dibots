@@ -154,7 +154,7 @@ export class LegacyService implements CoreService {
       server.listener
     );
 
-    // We register Kibana proxy middleware right before we start server to allow
+    // We register DiBots proxy middleware right before we start server to allow
     // all new platform plugins register their routes, so that `legacyProxy`
     // handles only requests that aren't handled by the new platform.
     server.route({
@@ -172,12 +172,12 @@ export class LegacyService implements CoreService {
       },
       handler: async ({ raw: { req, res } }, responseToolkit) => {
         if (this.kbnServer === undefined) {
-          this.log.debug(`Kibana server is not ready yet ${req.method}:${req.url}.`);
+          this.log.debug(`DiBots server is not ready yet ${req.method}:${req.url}.`);
 
           // If legacy server is not ready yet (e.g. it's still in optimization phase),
           // we should let client know that and ask to retry after 30 seconds.
           return responseToolkit
-            .response('Kibana server is not ready yet')
+            .response('DiBots server is not ready yet')
             .code(503)
             .header('Retry-After', '30');
         }

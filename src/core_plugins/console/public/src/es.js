@@ -57,7 +57,7 @@ export function send(method, path, data) {
     },
     function (jqXHR, textStatus, errorThrown) {
       if (jqXHR.status === 0) {
-        jqXHR.responseText = '\n\nFailed to connect to Console\'s backend.\nPlease check the Kibana server is up and running';
+        jqXHR.responseText = '\n\nFailed to connect to Console\'s backend.\nPlease check the DiBots server is up and running';
       }
       wrappedDfd.rejectWith(this, [jqXHR, textStatus, errorThrown]);
     });

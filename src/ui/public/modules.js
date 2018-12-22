@@ -20,7 +20,7 @@
 import angular from 'angular';
 import _ from 'lodash';
 /**
- * This module is used by Kibana to create and reuse angular modules. Angular modules
+ * This module is used by DiBots to create and reuse angular modules. Angular modules
  * can only be created once and need to have their dependencies at creation. This is
  * hard/impossible to do in require.js since all of the dependencies for a module are
  * loaded before it is.

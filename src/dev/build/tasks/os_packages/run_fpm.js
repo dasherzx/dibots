@@ -68,7 +68,7 @@ export async function runFpm(config, log, build, type, pkgSpecificFlags) {
     '--version', version,
     '--url', 'https://www.elastic.co',
     '--vendor', 'Elasticsearch,\ Inc.',
-    '--maintainer', 'Kibana Team\ \<info@elastic.co\>',
+    '--maintainer', 'DiBots Team\ \<info@elastic.co\>',
     '--license', pickLicense(),
 
     // prevent installing kibana if installing kibana-oss and vice versa

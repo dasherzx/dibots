@@ -11,7 +11,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
         "calls": Array [
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.defaultButtonLabel",
             },
           ],
@@ -23,13 +23,13 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.defaultButtonLabel",
             },
           ],
@@ -41,7 +41,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
@@ -53,7 +53,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
@@ -74,13 +74,13 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.defaultButtonLabel",
             },
           ],
@@ -92,7 +92,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
@@ -104,7 +104,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
@@ -125,7 +125,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
@@ -133,7 +133,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
         "results": Array [
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
@@ -141,19 +141,11 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
-          },
-          Object {
-            "isThrow": false,
-            "value": "Imports index pattern, visualizations and pre-defined dashboards.",
-          },
-          Object {
-            "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
@@ -161,7 +153,15 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
+          },
+          Object {
+            "isThrow": false,
+            "value": "Imports index pattern, visualizations and pre-defined dashboards.",
+          },
+          Object {
+            "isThrow": false,
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
@@ -173,19 +173,11 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
-          },
-          Object {
-            "isThrow": false,
-            "value": "Imports index pattern, visualizations and pre-defined dashboards.",
-          },
-          Object {
-            "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
@@ -193,7 +185,15 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
+          },
+          Object {
+            "isThrow": false,
+            "value": "Imports index pattern, visualizations and pre-defined dashboards.",
+          },
+          Object {
+            "isThrow": false,
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
@@ -205,7 +205,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
           },
         ],
       },
@@ -268,7 +268,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
                   onClick={[Function]}
                   type="button"
                 >
-                  Load Kibana objects
+                  Load DiBots objects
                 </EuiButton>
               </EuiFlexItem>
             </EuiFlexGroup>
@@ -284,7 +284,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           </React.Fragment>,
           "key": "installStep",
           "status": "incomplete",
-          "title": "Load Kibana objects",
+          "title": "Load DiBots objects",
         },
       ]
     }
@@ -297,7 +297,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
         key="installStep"
         status="incomplete"
         step={1}
-        title="Load Kibana objects"
+        title="Load DiBots objects"
       >
         <div
           className="euiStep"
@@ -327,7 +327,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
             <p
               className="euiTitle euiTitle--small euiStep__title"
             >
-              Load Kibana objects
+              Load DiBots objects
             </p>
           </EuiTitle>
           <div
@@ -393,7 +393,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
                           <span
                             className="euiButton__text"
                           >
-                            Load Kibana objects
+                            Load DiBots objects
                           </span>
                         </span>
                       </button>
@@ -449,7 +449,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
         "calls": Array [
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.defaultButtonLabel",
             },
           ],
@@ -461,13 +461,13 @@ exports[`bulkCreate should display success message when bulkCreate is successful
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.defaultButtonLabel",
             },
           ],
@@ -479,7 +479,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
@@ -491,7 +491,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
@@ -512,7 +512,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
           ],
           Array [
             Object {
-              "defaultMessage": "Load Kibana objects",
+              "defaultMessage": "Load DiBots objects",
               "id": "kbn.home.tutorial.savedObject.loadTitle",
             },
           ],
@@ -520,7 +520,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
         "results": Array [
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
@@ -528,19 +528,11 @@ exports[`bulkCreate should display success message when bulkCreate is successful
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
-          },
-          Object {
-            "isThrow": false,
-            "value": "Imports index pattern, visualizations and pre-defined dashboards.",
-          },
-          Object {
-            "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
@@ -548,7 +540,15 @@ exports[`bulkCreate should display success message when bulkCreate is successful
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
+          },
+          Object {
+            "isThrow": false,
+            "value": "Imports index pattern, visualizations and pre-defined dashboards.",
+          },
+          Object {
+            "isThrow": false,
+            "value": "Load DiBots objects",
           },
           Object {
             "isThrow": false,
@@ -560,7 +560,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
           },
           Object {
             "isThrow": false,
-            "value": "Load Kibana objects",
+            "value": "Load DiBots objects",
           },
         ],
       },
@@ -623,7 +623,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
                   onClick={[Function]}
                   type="button"
                 >
-                  Load Kibana objects
+                  Load DiBots objects
                 </EuiButton>
               </EuiFlexItem>
             </EuiFlexGroup>
@@ -639,7 +639,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
           </React.Fragment>,
           "key": "installStep",
           "status": "complete",
-          "title": "Load Kibana objects",
+          "title": "Load DiBots objects",
         },
       ]
     }
@@ -652,7 +652,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
         key="installStep"
         status="complete"
         step={1}
-        title="Load Kibana objects"
+        title="Load DiBots objects"
       >
         <div
           className="euiStep"
@@ -722,7 +722,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
             <p
               className="euiTitle euiTitle--small euiStep__title"
             >
-              Load Kibana objects
+              Load DiBots objects
             </p>
           </EuiTitle>
           <div
@@ -788,7 +788,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
                           <span
                             className="euiButton__text"
                           >
-                            Load Kibana objects
+                            Load DiBots objects
                           </span>
                         </span>
                       </button>
@@ -875,7 +875,7 @@ exports[`renders 1`] = `
                 onClick={[Function]}
                 type="button"
               >
-                Load Kibana objects
+                Load DiBots objects
               </EuiButton>
             </EuiFlexItem>
           </EuiFlexGroup>
@@ -885,7 +885,7 @@ exports[`renders 1`] = `
         </React.Fragment>,
         "key": "installStep",
         "status": "incomplete",
-        "title": "Load Kibana objects",
+        "title": "Load DiBots objects",
       },
     ]
   }

@@ -58,7 +58,7 @@ describe('core_plugins/kibana/server/lib', function () {
     });
 
     it('finds the previously set uuid with config match', async function () {
-      const msg = `Kibana instance UUID: ${testUuid}`;
+      const msg = `DiBots instance UUID: ${testUuid}`;
       config.set('server.uuid', testUuid);
 
       await manageUuid(kbnServer.server);
@@ -73,7 +73,7 @@ describe('core_plugins/kibana/server/lib', function () {
       await manageUuid(kbnServer.server);
 
       const newUuid = '5b2de169-2785-441b-ae8c-186a1936b17d';
-      const msg = `Updating Kibana instance UUID to: ${newUuid} (was: ${testUuid})`;
+      const msg = `Updating DiBots instance UUID to: ${newUuid} (was: ${testUuid})`;
 
       config.set('server.uuid', newUuid);
       await manageUuid(kbnServer.server);
@@ -82,7 +82,7 @@ describe('core_plugins/kibana/server/lib', function () {
     });
 
     it('resumes the uuid stored in data and sets it to the config', async function () {
-      const partialMsg = 'Resuming persistent Kibana instance UUID';
+      const partialMsg = 'Resuming persistent DiBots instance UUID';
       config.set('server.uuid'); // set to undefined
 
       await manageUuid(kbnServer.server);

@@ -291,7 +291,7 @@ export function StateProvider(Private, $rootScope, $location, stateManagementCon
     // If we ran out of space trying to persist the state, notify the user.
     fatalError(
       new Error(
-        'Kibana is unable to store history items in your session ' +
+        'DiBots is unable to store history items in your session ' +
         'because it is full and there don\'t seem to be items any items safe ' +
         'to delete.\n' +
         '\n' +

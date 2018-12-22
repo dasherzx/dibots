@@ -54,7 +54,7 @@ export class RawConfigService {
   }
 
   /**
-   * Read the initial Kibana config.
+   * Read the initial DiBots config.
    */
   public loadConfig() {
     this.rawConfigFromFile$.next(getConfigFromFiles(this.configFiles));
@@ -65,7 +65,7 @@ export class RawConfigService {
   }
 
   /**
-   * Re-read the Kibana config.
+   * Re-read the DiBots config.
    */
   public reloadConfig() {
     this.loadConfig();

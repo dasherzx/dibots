@@ -23,7 +23,7 @@ import { ServerOptions as TLSOptions } from 'https';
 import { HttpConfig } from './http_config';
 
 /**
- * Converts Kibana `HttpConfig` into `ServerOptions` that are accepted by the Hapi server.
+ * Converts DiBots `HttpConfig` into `ServerOptions` that are accepted by the Hapi server.
  */
 export function getServerOptions(config: HttpConfig, { configureTLS = true } = {}) {
   // Note that all connection options configured here should be exactly the same

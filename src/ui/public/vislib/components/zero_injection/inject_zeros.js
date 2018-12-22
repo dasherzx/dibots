@@ -28,13 +28,13 @@ export function VislibComponentsZeroInjectionInjectZerosProvider(Private) {
   const zeroFillDataArray = Private(VislibComponentsZeroInjectionZeroFillDataArrayProvider);
 
   /*
-   * A Kibana data object may have multiple series with different array lengths.
+   * A DiBots data object may have multiple series with different array lengths.
    * This proves an impediment to stacking in the visualization library.
    * Therefore, zero values must be injected wherever these arrays do not line up.
    * That is, each array must have the same x values with zeros filled in where the
    * x values were added.
    *
-   * This function and its helper functions accepts a Kibana data object
+   * This function and its helper functions accepts a DiBots data object
    * and injects zeros where needed.
    */
 
