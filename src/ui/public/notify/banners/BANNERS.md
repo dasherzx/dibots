@@ -78,7 +78,7 @@ const bannerId = banners.add({
   component: (
     <EuiCallOut
       iconType="iInCircle"
-      title="In order to visualize and explore data in DiBots, you'll need to create an index pattern to retrieve data from Elasticsearch."
+      title="In order to visualize and explore data in EagleEye, you'll need to create an index pattern to retrieve data from Elasticsearch."
     >
       <EuiFlexGroup
         gutterSize="s"
@@ -221,7 +221,7 @@ function displayBanner() {
         color="warning"
         iconType="iInCircle"
         title={
-          `In order to visualize and explore data in DiBots,
+          `In order to visualize and explore data in EagleEye,
           you'll need to create an index pattern to retrieve data from Elasticsearch.`
         }
       />

@@ -18,8 +18,8 @@
  */
 
 /**
- * ES and DiBots versions are locked, so DiBots should require that ES has the same version as
- * that defined in DiBots's. package.json.
+ * ES and EagleEye versions are locked, so EagleEye should require that ES has the same version as
+ * that defined in EagleEye's. package.json.
  */
 
 import { forEach, get } from 'lodash';
@@ -50,7 +50,7 @@ export function ensureEsVersion(server, kibanaVersion) {
     // Aggregate incompatible ES nodes.
       const incompatibleNodes = [];
 
-      // Aggregate ES nodes which should prompt a DiBots upgrade.
+      // Aggregate ES nodes which should prompt a EagleEye upgrade.
       const warningNodes = [];
 
       forEach(info.nodes, esNode => {
@@ -59,7 +59,7 @@ export function ensureEsVersion(server, kibanaVersion) {
           return incompatibleNodes.push(esNode);
         }
 
-        // It's acceptable if ES and DiBots versions are not the same so long as
+        // It's acceptable if ES and EagleEye versions are not the same so long as
         // they are not incompatible, but we should warn about it
         if (esNode.version !== kibanaVersion) {
           warningNodes.push(esNode);
@@ -88,8 +88,8 @@ export function ensureEsVersion(server, kibanaVersion) {
           lastWarnedNodesForServer.set(server, warningNodeNames);
           server.log(['warning'], {
             tmpl: (
-              `You're running DiBots ${kibanaVersion} with some different versions of ` +
-            'Elasticsearch. Update DiBots or Elasticsearch to the same ' +
+              `You're running EagleEye ${kibanaVersion} with some different versions of ` +
+            'Elasticsearch. Update EagleEye or Elasticsearch to the same ' +
             `version to prevent compatibility issues: ${warningNodeNames}`
             ),
             kibanaVersion,
@@ -101,7 +101,7 @@ export function ensureEsVersion(server, kibanaVersion) {
       if (incompatibleNodes.length) {
         const incompatibleNodeNames = getHumanizedNodeNames(incompatibleNodes);
         throw new Error(
-          `This version of DiBots requires Elasticsearch v` +
+          `This version of EagleEye requires Elasticsearch v` +
         `${kibanaVersion} on all nodes. I found ` +
         `the following incompatible nodes in your cluster: ${incompatibleNodeNames.join(', ')}`
         );

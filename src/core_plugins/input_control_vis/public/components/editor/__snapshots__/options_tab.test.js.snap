@@ -13,7 +13,7 @@ exports[`renders OptionsTab 1`] = `
       data-test-subj="inputControlEditorUpdateFiltersOnChangeCheckbox"
       label={
         <FormattedMessage
-          defaultMessage="Update DiBots filters on each change"
+          defaultMessage="Update EagleEye filters on each change"
           id="inputControl.editor.optionsTab.updateFilterLabel"
           values={Object {}}
         />

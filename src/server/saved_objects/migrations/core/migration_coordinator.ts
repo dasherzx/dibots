@@ -18,20 +18,20 @@
  */
 
 /*
- * This provides a mechanism for preventing multiple DiBots instances from
+ * This provides a mechanism for preventing multiple EagleEye instances from
  * simultaneously running migrations on the same index. It synchronizes this
  * by handling index creation conflicts, and putting this instance into a
  * poll loop that periodically checks to see if the index is migrated.
  *
- * The reason we have to coordinate this, rather than letting each DiBots instance
- * perform duplicate work, is that if we allowed each DiBots to simply run migrations in
+ * The reason we have to coordinate this, rather than letting each EagleEye instance
+ * perform duplicate work, is that if we allowed each EagleEye to simply run migrations in
  * parallel, they would each try to reindex and each try to create the destination index.
  * If those indices already exist, it may be due to contention between multiple Kibana
  * instances (which is safe to ignore), but it may be due to a partially completed migration,
- * or someone tampering with the DiBots alias. In these cases, it's not clear that we should
+ * or someone tampering with the EagleEye alias. In these cases, it's not clear that we should
  * just migrate data into an existing index. Such an action could result in data loss. Instead,
- * we should probably fail, and the DiBots sys-admin should clean things up before relaunching
- * DiBots.
+ * we should probably fail, and the EagleEye sys-admin should clean things up before relaunching
+ * EagleEye.
 */
 
 import _ from 'lodash';
@@ -84,7 +84,7 @@ export async function coordinateMigration(opts: Opts): Promise<MigrationResult> 
 /**
  * If the specified error is an index exists error, this logs a warning,
  * and is the cue for us to fall into a polling loop, waiting for some
- * other DiBots instance to complete the migration.
+ * other EagleEye instance to complete the migration.
  */
 function handleIndexExists(error: any, log: Logger) {
   const isIndexExistsError =
@@ -96,10 +96,10 @@ function handleIndexExists(error: any, log: Logger) {
   const index = _.get(error, 'body.error.index');
 
   log.warning(
-    `Another DiBots instance appears to be migrating the index. Waiting for ` +
-      `that migration to complete. If no other DiBots instance is attempting ` +
+    `Another EagleEye instance appears to be migrating the index. Waiting for ` +
+      `that migration to complete. If no other EagleEye instance is attempting ` +
       `migrations, you can get past this message by deleting index ${index} and ` +
-      `restarting DiBots.`
+      `restarting EagleEye.`
   );
 
   return true;

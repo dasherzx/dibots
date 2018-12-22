@@ -116,7 +116,7 @@ export default class KbnServer {
   /**
    * Extend the KbnServer outside of the constraints of a plugin. This allows access
    * to APIs that are not exposed (intentionally) to the plugins and should only
-   * be used when the code will be kept up to date with DiBots.
+   * be used when the code will be kept up to date with EagleEye.
    *
    * @param {...function} - functions that should be called to mixin functionality.
    *                         They are called with the arguments (kibana, server, config)

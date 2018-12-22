@@ -67,7 +67,7 @@ export class Project {
 
     if (files || !include) {
       throw new Error(
-        'tsconfig.json files in the DiBots repo must use "include" keys and not "files"'
+        'tsconfig.json files in the EagleEye repo must use "include" keys and not "files"'
       );
     }
 

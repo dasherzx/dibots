@@ -68,7 +68,7 @@ if (flags.help) {
     dedent(chalk`
       {dim usage:} node scripts/build
 
-      build the DiBots distributable
+      build the EagleEye distributable
 
       options:
         --oss                   {dim Only produce the OSS distributable of Kibana}

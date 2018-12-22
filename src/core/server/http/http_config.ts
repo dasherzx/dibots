@@ -74,7 +74,7 @@ const createHttpSchema = schema.object(
         config.ssl.redirectHttpFromPort === config.port
       ) {
         return (
-          'DiBots does not accept http traffic to [port] when ssl is ' +
+          'EagleEye does not accept http traffic to [port] when ssl is ' +
           'enabled (only https is allowed), so [ssl.redirectHttpFromPort] ' +
           `cannot be configured to the same value. Both are [${config.port}].`
         );

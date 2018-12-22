@@ -19,7 +19,7 @@
 
 export const appEntryTemplate = (bundle) => `
 /**
- * DiBots entry file
+ * EagleEye entry file
  *
  * This is programmatically created and updated, do not modify
  *

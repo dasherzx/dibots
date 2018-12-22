@@ -205,7 +205,7 @@ export class Home extends Component {
               <EuiButton href="#/home/feature_directory">
                 <FormattedMessage
                   id="kbn.home.directories.notFound.viewFullButtonLabel"
-                  defaultMessage="View full directory of DiBots plugins"
+                  defaultMessage="View full directory of EagleEye plugins"
                 />
               </EuiButton>
             </EuiFlexItem>

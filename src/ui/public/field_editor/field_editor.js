@@ -285,7 +285,7 @@ export class FieldEditorComponent extends PureComponent {
             </strong>&nbsp;
             <FormattedMessage
               id="common.ui.fieldEditor.warningLabel.warningDetail"
-              defaultMessage="{language} is deprecated and support will be removed in the next major version of DiBots and Elasticsearch.
+              defaultMessage="{language} is deprecated and support will be removed in the next major version of EagleEye and Elasticsearch.
               We recommend using {painlessLink} for new scripted fields."
               values={{
                 language: <EuiCode>{field.lang}</EuiCode>,

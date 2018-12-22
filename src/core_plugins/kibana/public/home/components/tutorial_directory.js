@@ -104,7 +104,7 @@ class TutorialDirectoryUi extends React.Component {
     tutorialCards.push({
       name: this.props.intl.formatMessage({ id: 'kbn.home.tutorial.card.sampleDataTitle', defaultMessage: 'Sample Data' }),
       description: this.props.intl.formatMessage({ id: 'kbn.home.tutorial.card.sampleDataDescription',
-        defaultMessage: 'Get started exploring DiBots with these "one click" data sets.'
+        defaultMessage: 'Get started exploring EagleEye with these "one click" data sets.'
       }),
       url: this.props.addBasePath('#/home/tutorial_directory/sampleData'),
       elasticCloud: true,
@@ -196,7 +196,7 @@ class TutorialDirectoryUi extends React.Component {
             <h1>
               <FormattedMessage
                 id="kbn.home.tutorial.addDataTitle"
-                defaultMessage="Add Data to DiBots"
+                defaultMessage="Add Data to EagleEye"
               />
             </h1>
           </EuiTitle>

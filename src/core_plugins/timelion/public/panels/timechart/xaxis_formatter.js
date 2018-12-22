@@ -27,7 +27,7 @@ export default function xaxisFormatterProvider(config) {
 
     const interval = moment.duration(Number(parts[1]), parts[2]);
 
-    // Cribbed from DiBots's. TimeBuckets class
+    // Cribbed from EagleEye's. TimeBuckets class
     const rules = config.get('dateFormat:scaled');
 
     for (let i = rules.length - 1; i >= 0; i--) {

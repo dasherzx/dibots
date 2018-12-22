@@ -127,14 +127,14 @@ describe.skip('Server logging configuration', function () {
               switchToPlainTextLog();
             }
           } else if (line.startsWith('{')) {
-            // We have told DiBots to stop logging json, but it hasn't completed
+            // We have told EagleEye to stop logging json, but it hasn't completed
             // the switch yet, so we verify the messages that are logged while
             // switching over.
 
             const data = JSON.parse(line);
             lines.push(prepareJson(data));
           } else {
-            // DiBots has successfully stopped logging json, so we verify the
+            // EagleEye has successfully stopped logging json, so we verify the
             // log line and kill the server.
 
             lines.push(prepareLogLine(line));

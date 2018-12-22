@@ -29,7 +29,7 @@ export function ensureNotTribe(callWithInternalUser) {
       const tribeSettings = get(info, ['nodes', nodeId, 'settings', 'tribe']);
 
       if (tribeSettings) {
-        throw new Error('DiBots does not support using tribe nodes as the primary elasticsearch connection.');
+        throw new Error('EagleEye does not support using tribe nodes as the primary elasticsearch connection.');
       }
 
       return true;

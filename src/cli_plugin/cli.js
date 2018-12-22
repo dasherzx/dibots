@@ -30,7 +30,7 @@ const program = new Command('bin/kibana-plugin');
 program
   .version(pkg.version)
   .description(
-    'The DiBots plugin manager enables you to install and remove plugins that ' +
+    'The EagleEye plugin manager enables you to install and remove plugins that ' +
   'provide additional functionality to Kibana'
   );
 

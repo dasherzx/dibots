@@ -38,7 +38,7 @@ export async function getConfig({ isRelease, targetAllPlatforms }) {
 
   return new class Config {
     /**
-     * Get DiBots's. parsed package.json file
+     * Get EagleEye's. parsed package.json file
      * @return {Object}
      */
     getKibanaPkg() {
@@ -63,7 +63,7 @@ export async function getConfig({ isRelease, targetAllPlatforms }) {
     }
 
     /**
-     * Resolve a set of relative paths based from the directory of the DiBots repo
+     * Resolve a set of relative paths based from the directory of the EagleEye repo
      * @param  {...String} ...subPaths
      * @return {String}
      */

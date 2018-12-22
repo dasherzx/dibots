@@ -103,7 +103,7 @@ export const createHeartbeatInstructions = context => ({
         defaultMessage: 'Start Heartbeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.heartbeatInstructions.start.osxTextPre', {
-        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the EagleEye dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         './heartbeat setup',
@@ -115,7 +115,7 @@ export const createHeartbeatInstructions = context => ({
         defaultMessage: 'Start Heartbeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.heartbeatInstructions.start.debTextPre', {
-        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the EagleEye dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         'sudo heartbeat setup',
@@ -127,7 +127,7 @@ export const createHeartbeatInstructions = context => ({
         defaultMessage: 'Start Heartbeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.heartbeatInstructions.start.rpmTextPre', {
-        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the EagleEye dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         'sudo heartbeat setup',
@@ -139,7 +139,7 @@ export const createHeartbeatInstructions = context => ({
         defaultMessage: 'Start Heartbeat',
       }),
       textPre: i18n.translate('kbn.common.tutorials.heartbeatInstructions.start.windowsTextPre', {
-        defaultMessage: 'The `setup` command loads the DiBots dashboards. If the dashboards are already set up, omit this command.',
+        defaultMessage: 'The `setup` command loads the EagleEye dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: [
         'PS C:\\Program Files\\Heartbeat> .\\heartbeat.exe setup',
@@ -169,7 +169,7 @@ export const createHeartbeatInstructions = context => ({
       ],
       textPost: i18n.translate('kbn.common.tutorials.heartbeatInstructions.config.osxTextPost', {
         defaultMessage: 'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
-and {kibanaUrlTemplate} is the URL of DiBots.',
+and {kibanaUrlTemplate} is the URL of EagleEye.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -198,7 +198,7 @@ and {kibanaUrlTemplate} is the URL of DiBots.',
       ],
       textPost: i18n.translate('kbn.common.tutorials.heartbeatInstructions.config.debTextPost', {
         defaultMessage: 'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
-and {kibanaUrlTemplate} is the URL of DiBots.',
+and {kibanaUrlTemplate} is the URL of EagleEye.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -227,7 +227,7 @@ and {kibanaUrlTemplate} is the URL of DiBots.',
       ],
       textPost: i18n.translate('kbn.common.tutorials.heartbeatInstructions.config.rpmTextPost', {
         defaultMessage: 'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
-and {kibanaUrlTemplate} is the URL of DiBots.',
+and {kibanaUrlTemplate} is the URL of EagleEye.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -256,7 +256,7 @@ and {kibanaUrlTemplate} is the URL of DiBots.',
       ],
       textPost: i18n.translate('kbn.common.tutorials.heartbeatInstructions.config.windowsTextPost', {
         defaultMessage: 'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
-and {kibanaUrlTemplate} is the URL of DiBots.',
+and {kibanaUrlTemplate} is the URL of EagleEye.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',

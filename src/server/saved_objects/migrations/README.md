@@ -1,21 +1,21 @@
 # Saved Object Migrations
 
-Migrations are the mechanism by which saved object indices are kept up to date with the DiBots system. Plugin authors write their plugins to work with a certain set of mappings, and documents of a certain shape. Migrations ensure that the index actually conforms to those expectations.
+Migrations are the mechanism by which saved object indices are kept up to date with the EagleEye system. Plugin authors write their plugins to work with a certain set of mappings, and documents of a certain shape. Migrations ensure that the index actually conforms to those expectations.
 
 ## Migrating the index
 
-When DiBots boots, prior to serving any requests, it performs a check to see if the kibana index needs to be migrated.
+When EagleEye boots, prior to serving any requests, it performs a check to see if the kibana index needs to be migrated.
 
 * It searches the index for documents that are out of date, and it diffs the persisted index mappings with the mappings defined by the current system.
-* If the DiBots index does not exist, it is created.
+* If the EagleEye index does not exist, it is created.
 * If there are out of date docs, or breaking mapping changes, or the current index is not aliased, the index is migrated.
 * If there are minor mapping changes, such as adding a new property, the new mappings are applied to the current index.
 
-All of this happens prior to DiBots serving any http requests.
+All of this happens prior to EagleEye serving any http requests.
 
 Here is the gist of what happens if an index migration is necessary:
 
-* If `.kibana` (or whatever the DiBots index is named) is not an alias, it will be converted to one:
+* If `.kibana` (or whatever the EagleEye index is named) is not an alias, it will be converted to one:
   * Reindex `.kibana` into `.kibana_1`
   * Delete `.kibana`
   * Create an alias `.kibana` that points to `.kibana_1`
@@ -23,9 +23,9 @@ Here is the gist of what happens if an index migration is necessary:
 * Copy all documents from `.kibana_1` into `.kibana_2`, running them through any applicable migrations
 * Point the `.kibana` alias to `.kibana_2`
 
-## Migrating DiBots clusters
+## Migrating EagleEye clusters
 
-If DiBots is being run in a cluster, migrations will be coordinated so that they only run on one DiBots instance at a time. This is done in a fairly rudimentary way. Let's say we have two DiBots instances, kibana1 and kibana2.
+If EagleEye is being run in a cluster, migrations will be coordinated so that they only run on one EagleEye instance at a time. This is done in a fairly rudimentary way. Let's say we have two EagleEye instances, kibana1 and kibana2.
 
 * kibana1 and kibana2 both start simultaneously and detect that the index requires migration
 * kibana1 begins the migration and creates index `.kibana_4`
@@ -34,17 +34,17 @@ If DiBots is being run in a cluster, migrations will be coordinated so that they
   * Every few seconds, kibana2 instance checks the `.kibana` index to see if it is done migrating
   * Once `.kibana` is determined to be up to date, the kibana2 instance continues booting
 
-In this example, if the `.kibana_4` index existed prior to DiBots booting, the entire migration process will fail, as all DiBots instances will assume another instance is migrating to the `.kibana_4` index. This problem is only fixable by deleting the `.kibana_4` index.
+In this example, if the `.kibana_4` index existed prior to EagleEye booting, the entire migration process will fail, as all EagleEye instances will assume another instance is migrating to the `.kibana_4` index. This problem is only fixable by deleting the `.kibana_4` index.
 
 ## Import / export
 
-If a user attempts to import FanciPlugin 1.0 documents into a DiBots system that is running FanciPlugin 2.0, those documents will be migrated prior to being persisted in the DiBots index. If a user attempts to import documents having a migration version that is _greater_ than the current DiBots version, the documents will fail to import.
+If a user attempts to import FanciPlugin 1.0 documents into a EagleEye system that is running FanciPlugin 2.0, those documents will be migrated prior to being persisted in the EagleEye index. If a user attempts to import documents having a migration version that is _greater_ than the current EagleEye version, the documents will fail to import.
 
 ## Validation
 
-It might happen that a user modifies their FanciPlugin 1.0 export file to have documents with a migrationVersion of 2.0.0. In this scenario, DiBots will store those documents as if they are up to date, even though they are not, and the result will be unknown, but probably undesirable behavior.
+It might happen that a user modifies their FanciPlugin 1.0 export file to have documents with a migrationVersion of 2.0.0. In this scenario, EagleEye will store those documents as if they are up to date, even though they are not, and the result will be unknown, but probably undesirable behavior.
 
-Similarly, DiBots server APIs assume that they are sent up to date documents unless a document specifies a migrationVersion. This means that out-of-date callers of our APIs will send us out-of-date documents, and those documents will be accepted and stored as if they are up-to-date.
+Similarly, EagleEye server APIs assume that they are sent up to date documents unless a document specifies a migrationVersion. This means that out-of-date callers of our APIs will send us out-of-date documents, and those documents will be accepted and stored as if they are up-to-date.
 
 To prevent this from happening, migration authors should _always_ write a [validation](../validation) function that throws an error if a document is not up to date, and this validation function should always be updated any time a new migration is added for the relevent document types.
 
@@ -62,7 +62,7 @@ So, let's say we have a document that looks like this:
 }
 ```
 
-In this document, one plugin might own the `dashboard` type, and another plugin might own the `securityKey` type. If two or more plugins define securityKey migrations `{ migrations: { securityKey: { ... } } }`, DiBots will fail to start.
+In this document, one plugin might own the `dashboard` type, and another plugin might own the `securityKey` type. If two or more plugins define securityKey migrations `{ migrations: { securityKey: { ... } } }`, EagleEye will fail to start.
 
 To write a migration for this document, the dashboard plugin might look something like this:
 
@@ -88,21 +88,21 @@ uiExports: {
 }
 ```
 
-After DiBots migrates the index, our example document would have `{ attributes: { title: 'WHATEVER!!' } }`.
+After EagleEye migrates the index, our example document would have `{ attributes: { title: 'WHATEVER!!' } }`.
 
 Each migration function only needs to be able to handle documents belonging to the previous version. The initial migration function (in this example, `1.9.0`) needs to be more flexible, as it may be passed documents of any pre `1.9.0` shape.
 
 ## Disabled plugins
 
-If a plugin is disbled, all of its documents are retained in the DiBots index. They can be imported and exported. When the plugin is re-enabled, DiBots will migrate any out of date documents that were imported or retained while it was disabled.
+If a plugin is disbled, all of its documents are retained in the EagleEye index. They can be imported and exported. When the plugin is re-enabled, EagleEye will migrate any out of date documents that were imported or retained while it was disabled.
 
 ## Configuration
 
-DiBots index migrations expose a few config settings which might be tweaked:
+EagleEye index migrations expose a few config settings which might be tweaked:
 
 * `migrations.scrollDuration` - The [scroll](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-scroll.html#scroll-search-context) value used to read batches of documents from the source index. Defaults to `15m`.
 * `migrations.batchSize` - The number of documents to read / transform / write at a time during index migrations
-* `migrations.pollInterval` - How often, in milliseconds, secondary DiBots instances will poll to see if the primary DiBots instance has finished migrating the index.
+* `migrations.pollInterval` - How often, in milliseconds, secondary EagleEye instances will poll to see if the primary EagleEye instance has finished migrating the index.
 
 ## Example
 
@@ -162,9 +162,9 @@ uiExports: {
 }
 ```
 
-Now, whenever DiBots boots, if FanciPlugin is enabled, DiBots scans its index for any documents that have type 'fanci' and have a `migrationVersion.fanci` property that is anything other than `2.0.0`. If any such documents are found, the index is determined to be out of date (or at least of the wrong version), and DiBots attempts to migrate the index.
+Now, whenever EagleEye boots, if FanciPlugin is enabled, EagleEye scans its index for any documents that have type 'fanci' and have a `migrationVersion.fanci` property that is anything other than `2.0.0`. If any such documents are found, the index is determined to be out of date (or at least of the wrong version), and EagleEye attempts to migrate the index.
 
-At the end of the migration, DiBots's. fanci documents will look something like this:
+At the end of the migration, EagleEye's. fanci documents will look something like this:
 
 ```js
 {
@@ -186,7 +186,7 @@ The migrations source code is grouped into two folders:
 * `core` - Contains index-agnostic, general migration logic, which could be reused for indices other than `.kibana`
 * `kibana` - Contains a relatively light-weight wrapper around core, which provides `.kibana` index-specific logic
 
-Generally, the code eschews classes in favor of functions and basic data structures. The publicly exported code is all class-based, however, in an attempt to conform to DiBots norms.
+Generally, the code eschews classes in favor of functions and basic data structures. The publicly exported code is all class-based, however, in an attempt to conform to EagleEye norms.
 
 ### Core
 

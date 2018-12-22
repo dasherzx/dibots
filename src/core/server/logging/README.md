@@ -1,12 +1,12 @@
 # Logging
 
-The way logging works in DiBots is inspired by `log4j 2` logging framework used by [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#logging).
+The way logging works in EagleEye is inspired by `log4j 2` logging framework used by [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#logging).
 The main idea is to have consistent logging behaviour (configuration, log format etc.) across the entire Elastic Stack 
 where possible.
 
 ## Loggers, Appenders and Layouts
 
-DiBots logging system has three main components: _loggers_, _appenders_ and _layouts_. These components allow us to log
+EagleEye logging system has three main components: _loggers_, _appenders_ and _layouts_. These components allow us to log
 messages according to message type and level, and to control how these messages are formatted and where the final logs
 will be displayed or stored.
 
@@ -64,7 +64,7 @@ text and any other metadata that may be associated with the log message itself.
 ## Configuration
 
 As any configuration in the platform, logging configuration is validated against the predefined schema and if there are
-any issues with it, DiBots will fail to start with the detailed error message.
+any issues with it, EagleEye will fail to start with the detailed error message.
 
 Once the code acquired a logger instance it should not care about any runtime changes in the configuration that may
 happen: all changes will be applied to existing logger instances under the hood.

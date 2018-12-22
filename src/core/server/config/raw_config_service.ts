@@ -54,7 +54,7 @@ export class RawConfigService {
   }
 
   /**
-   * Read the initial DiBots config.
+   * Read the initial EagleEye config.
    */
   public loadConfig() {
     this.rawConfigFromFile$.next(getConfigFromFiles(this.configFiles));
@@ -65,7 +65,7 @@ export class RawConfigService {
   }
 
   /**
-   * Re-read the DiBots config.
+   * Re-read the EagleEye config.
    */
   public reloadConfig() {
     this.loadConfig();

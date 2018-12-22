@@ -66,7 +66,7 @@ export const ScriptingWarningCallOut = ({
           <FormattedMessage
             id="common.ui.fieldEditor.warningCallOut.descriptionLabel"
             defaultMessage="Scripted fields can be used to display and aggregate calculated values. As such, they can be very slow, and
-            if done incorrectly, can cause DiBots to be unusable. There's no safety net here. If you make a typo, unexpected exceptions
+            if done incorrectly, can cause EagleEye to be unusable. There's no safety net here. If you make a typo, unexpected exceptions
             will be thrown all over the place!"
           />
         </p>

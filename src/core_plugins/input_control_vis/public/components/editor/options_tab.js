@@ -58,7 +58,7 @@ export class OptionsTab extends Component {
           <EuiSwitch
             label={<FormattedMessage
               id="inputControl.editor.optionsTab.updateFilterLabel"
-              defaultMessage="Update DiBots filters on each change"
+              defaultMessage="Update EagleEye filters on each change"
             />}
             checked={this.props.editorState.params.updateFiltersOnChange}
             onChange={this.handleUpdateFiltersChange}

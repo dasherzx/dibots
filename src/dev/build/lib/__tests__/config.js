@@ -40,7 +40,7 @@ describe('dev/build/lib/config', () => {
   };
 
   describe('#getKibanaPkg()', () => {
-    it('returns the parsed package.json from the DiBots repo', async () => {
+    it('returns the parsed package.json from the EagleEye repo', async () => {
       const { config } = await setup();
       expect(config.getKibanaPkg()).to.eql(pkg);
     });

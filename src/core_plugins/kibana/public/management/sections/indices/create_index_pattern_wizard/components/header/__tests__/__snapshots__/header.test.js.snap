@@ -46,7 +46,7 @@ exports[`Header should render a different name, prompt, and beta tag if provided
             component="span"
           >
             <FormattedMessage
-              defaultMessage="DiBots uses index patterns to retrieve data from Elasticsearch indices for things like visualizations."
+              defaultMessage="EagleEye uses index patterns to retrieve data from Elasticsearch indices for things like visualizations."
               id="kbn.management.createIndexPatternLabel"
               values={Object {}}
             />
@@ -108,7 +108,7 @@ exports[`Header should render normally 1`] = `
             component="span"
           >
             <FormattedMessage
-              defaultMessage="DiBots uses index patterns to retrieve data from Elasticsearch indices for things like visualizations."
+              defaultMessage="EagleEye uses index patterns to retrieve data from Elasticsearch indices for things like visualizations."
               id="kbn.management.createIndexPatternLabel"
               values={Object {}}
             />
@@ -162,7 +162,7 @@ exports[`Header should render without including system indices 1`] = `
             component="span"
           >
             <FormattedMessage
-              defaultMessage="DiBots uses index patterns to retrieve data from Elasticsearch indices for things like visualizations."
+              defaultMessage="EagleEye uses index patterns to retrieve data from Elasticsearch indices for things like visualizations."
               id="kbn.management.createIndexPatternLabel"
               values={Object {}}
             />

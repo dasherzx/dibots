@@ -65,7 +65,7 @@ export const Header = ({
             <EuiTextColor color="subdued">
               <FormattedMessage
                 id="kbn.management.createIndexPatternLabel"
-                defaultMessage="DiBots uses index patterns to retrieve data from Elasticsearch indices for things like visualizations."
+                defaultMessage="EagleEye uses index patterns to retrieve data from Elasticsearch indices for things like visualizations."
               />
             </EuiTextColor>
           </p>

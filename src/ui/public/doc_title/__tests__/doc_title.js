@@ -25,7 +25,7 @@ import { DocTitleProvider } from '..';
 
 describe('docTitle Service', function () {
   let initialDocTitle;
-  const MAIN_TITLE = 'DiBots 4';
+  const MAIN_TITLE = 'EagleEye 4';
 
   let docTitle;
   let $rootScope;

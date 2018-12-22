@@ -117,7 +117,7 @@ export class LegacyService implements CoreService {
     const kbnServer: LegacyKbnServer = new KbnServer(config.toRaw(), {
       // If core HTTP service is run we'll receive internal server reference and
       // options that were used to create that server so that we can properly
-      // bridge with the "legacy" DiBots. If server isn't run (e.g. if process is
+      // bridge with the "legacy" EagleEye. If server isn't run (e.g. if process is
       // managed by ClusterManager or optimizer) then we won't have that info,
       // so we can't start "legacy" server either.
       serverOptions:
@@ -154,7 +154,7 @@ export class LegacyService implements CoreService {
       server.listener
     );
 
-    // We register DiBots proxy middleware right before we start server to allow
+    // We register EagleEye proxy middleware right before we start server to allow
     // all new platform plugins register their routes, so that `legacyProxy`
     // handles only requests that aren't handled by the new platform.
     server.route({
@@ -172,12 +172,12 @@ export class LegacyService implements CoreService {
       },
       handler: async ({ raw: { req, res } }, responseToolkit) => {
         if (this.kbnServer === undefined) {
-          this.log.debug(`DiBots server is not ready yet ${req.method}:${req.url}.`);
+          this.log.debug(`EagleEye server is not ready yet ${req.method}:${req.url}.`);
 
           // If legacy server is not ready yet (e.g. it's still in optimization phase),
           // we should let client know that and ask to retry after 30 seconds.
           return responseToolkit
-            .response('DiBots server is not ready yet')
+            .response('EagleEye server is not ready yet')
             .code(503)
             .header('Retry-After', '30');
         }

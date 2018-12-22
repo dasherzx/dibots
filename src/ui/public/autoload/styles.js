@@ -19,7 +19,7 @@
 
 const theme = require('../theme');
 
-// DiBots UI Framework
+// EagleEye UI Framework
 require('@kbn/ui-framework/dist/ui_framework.css');
 
 // Elastic UI Framework, light theme
@@ -33,7 +33,7 @@ theme.registerTheme('dark', euiThemeDark);
 // Set default theme.
 theme.applyTheme('light');
 
-// All DiBots styles inside of the /styles dir
+// All EagleEye styles inside of the /styles dir
 const context = require.context('../styles', false, /[\/\\](?!mixins|variables|_|\.)[^\/\\]+\.less/);
 context.keys().forEach(key => context(key));
 

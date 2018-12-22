@@ -203,7 +203,7 @@ uiModules.get('apps/management')
               defaultMessage: 'Delete',
             }),
             title: i18n('kbn.management.objects.confirmModalOptions.modalTitle', {
-              defaultMessage: 'Delete saved DiBots object?'
+              defaultMessage: 'Delete saved EagleEye object?'
             }),
           };
           confirmModal(

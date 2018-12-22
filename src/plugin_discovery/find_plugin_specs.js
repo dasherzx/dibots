@@ -90,7 +90,7 @@ function groupSpecsById(specs) {
 
 /**
  *  Creates a collection of observables for discovering pluginSpecs
- *  using DiBots's. defaults, settings, and config service
+ *  using EagleEye's. defaults, settings, and config service
  *
  *  @param {Object} settings
  *  @param {ConfigService} [configToMutate] when supplied **it is mutated** to

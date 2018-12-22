@@ -70,7 +70,7 @@ if (opts.help) {
 (async function run() {
   const path = resolve(REPO_ROOT, 'NOTICE.txt');
   const newContent = await generateNoticeFromSource({
-    productName: 'DiBots source code with DiBots X-Pack source code',
+    productName: 'EagleEye source code with EagleEye X-Pack source code',
     directory: REPO_ROOT,
     log,
   });

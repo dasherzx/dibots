@@ -23,7 +23,7 @@ import mockFs from 'mock-fs';
 import { Keystore } from '../server/keystore';
 import { remove } from './remove';
 
-describe('DiBots keystore', () => {
+describe('EagleEye keystore', () => {
   describe('remove', () => {
     const sandbox = sinon.createSandbox();
 

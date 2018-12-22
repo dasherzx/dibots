@@ -14,7 +14,7 @@
    viewBox="0 0 147 13.49375"
    version="1.1"
    id="svg98"
-   sodipodi:docname="dibots.svg"
+   sodipodi:docname="kibana.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <defs
      id="defs92" />
@@ -35,7 +35,7 @@
      inkscape:pagecheckerboard="true"
      borderlayer="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1025"
+     inkscape:window-height="1012"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,40 +57,36 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-387.7559)">
-    <g
-       aria-label="DiBots"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#000000;fill-opacity:1;stroke:none"
-       id="text102">
-      <path
-         d="m 45.305329,379.76113 h 10.512 q 0.468,0 0.936,0.072 0.468,0.036 0.936,0.108 3.24,0.684 5.904,3.708 2.7,3.024 2.7,8.568 0,0.9 -0.072,1.836 -0.072,0.9 -0.216,1.836 -0.612,3.852 -2.952,7.056 -2.304,3.168 -7.236,3.168 h -10.512 z m 3.42,22.968 h 7.92 q 2.844,0 4.32,-2.988 1.512,-3.024 1.512,-6.696 0,-0.072 0,-0.144 0,-0.072 0,-0.18 -0.072,-3.708 -1.764,-6.768 -1.692,-3.096 -5.184,-3.096 h -6.804 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;font-family:Helvetica-Normal;-inkscape-font-specification:Helvetica-Normal;fill:#ffffff"
-         id="path233"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 70.275267,406.11313 v -19.008 h 3.132 v 19.008 z m 0,-22.392 v -3.96 h 3.132 v 3.96 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;font-family:Helvetica-Normal;-inkscape-font-specification:Helvetica-Normal;fill:#ffffff"
-         id="path235"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 78.796579,406.11313 v -26.352 q 1.008,0 2.052,0 1.044,0 2.088,0 2.124,0 4.14,0 2.052,0 3.6,0 2.556,0.216 4.428,1.908 1.908,1.692 2.124,4.032 0.072,0.288 0.072,0.576 0.036,0.252 0.036,0.54 0,1.908 -0.972,3.312 -0.972,1.368 -2.268,2.088 1.908,0.648 3.06,2.016 1.188,1.332 1.188,3.672 0.036,0.252 0.036,0.468 0,0.216 0,0.432 0.036,2.844 -1.728,4.716 -1.728,1.836 -3.816,2.376 -0.396,0.108 -0.792,0.18 -0.396,0.036 -0.792,0.036 z m 3.384,-3.384 h 9.072 q 1.908,-0.324 2.844,-1.548 0.936,-1.224 0.972,-2.628 0,-0.036 0,-0.072 0,-0.036 0,-0.072 -0.036,-1.404 -1.08,-2.628 -1.008,-1.26 -3.024,-1.584 h -8.784 z m 0,-11.916 h 7.38 q 0.072,0 0.108,0.036 0.072,0 0.144,0 0.036,0 0.108,0 0.072,0 0.108,0 1.692,0 2.664,-1.224 0.972,-1.224 0.972,-2.7 0,-0.072 0,-0.144 0,-0.072 0,-0.144 -0.108,-1.512 -1.368,-2.772 -1.224,-1.296 -3.888,-1.296 h -6.228 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;font-family:Helvetica-Normal;-inkscape-font-specification:Helvetica-Normal;fill:#ffffff"
-         id="path237"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 101.47377,397.32913 q 0,-4.068 1.836,-7.272 1.836,-3.204 6.948,-3.204 0.324,0 0.648,0.036 0.324,0 0.648,0.036 2.7,0.396 4.968,2.736 2.268,2.34 2.268,7.668 0,0.792 -0.18,1.836 -0.144,1.044 -0.576,2.16 -0.792,1.944 -2.592,3.564 -1.8,1.62 -5.184,1.764 -4.032,0.216 -6.408,-1.98 -2.376,-2.232 -2.376,-7.344 z m 3.132,-0.288 q 0.18,3.672 1.8,5.364 1.62,1.692 3.492,1.692 0.036,0 0.036,0 0.036,0 0.072,0 2.124,-0.036 3.852,-2.052 1.764,-2.016 1.512,-5.58 -0.108,-3.456 -1.8,-5.184 -1.656,-1.764 -3.672,-1.764 -2.052,0 -3.744,1.872 -1.656,1.872 -1.548,5.652 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;font-family:Helvetica-Normal;-inkscape-font-specification:Helvetica-Normal;fill:#ffffff"
-         id="path239"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 123.02314,403.84513 v -13.608 h -2.556 v -3.132 h 2.556 v -5.076 h 3.096 v 5.076 h 3.132 v 3.132 h -3.132 v 11.916 q 0.144,1.116 0.54,1.476 0.396,0.36 0.936,0.36 0.18,0 0.36,0 0.216,-0.036 0.432,-0.072 0.216,-0.036 0.432,-0.036 0.216,-0.036 0.432,-0.036 v 2.844 q -0.576,0.036 -1.152,0.072 -0.54,0.072 -1.044,0.072 -1.764,0 -2.808,-0.684 -1.044,-0.648 -1.224,-2.304 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;font-family:Helvetica-Normal;-inkscape-font-specification:Helvetica-Normal;fill:#ffffff"
-         id="path241"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 131.2092,400.46113 q 0.576,0 1.296,0 0.72,0 1.476,0 0.072,0 0.144,0 0.108,0 0.216,0 0.216,2.16 1.62,3.096 1.404,0.936 3.06,0.972 0.036,0 0.036,0 0.036,0 0.072,0 1.728,0 3.132,-0.828 1.44,-0.828 1.44,-2.124 0.108,-1.512 -1.296,-2.124 -1.404,-0.612 -3.312,-1.044 -0.324,-0.072 -0.684,-0.144 -0.324,-0.072 -0.684,-0.18 -2.34,-0.54 -4.248,-1.692 -1.908,-1.152 -1.692,-4.176 0.216,-2.34 1.656,-3.636 1.476,-1.332 4.86,-1.728 0.612,0 1.296,0.036 0.684,0.036 1.404,0.144 1.8,0.288 3.312,1.44 1.512,1.152 1.656,4.032 h -3.132 q -0.252,-1.584 -1.368,-2.268 -1.08,-0.684 -2.376,-0.684 -0.108,0 -0.216,0 -0.072,0 -0.18,0 -1.512,0.108 -2.808,0.9 -1.26,0.756 -1.26,1.764 -0.108,1.44 1.296,2.052 1.404,0.612 3.348,1.08 0.36,0.072 0.72,0.18 0.36,0.072 0.72,0.144 2.304,0.576 4.212,1.656 1.908,1.044 1.908,3.672 0,0.036 0,0.108 0,0.036 0,0.072 0,0.036 0,0.108 0,0.036 0,0.072 0,0.108 0,0.216 0,0.108 0,0.216 -0.18,1.944 -2.088,3.6 -1.908,1.62 -5.58,1.8 -0.036,0 -0.108,0 -0.036,0 -0.072,0 -0.072,-0.036 -0.108,-0.036 -0.036,0 -0.108,0 -0.612,-0.036 -1.296,-0.108 -0.684,-0.072 -1.368,-0.216 -1.836,-0.396 -3.384,-1.692 -1.512,-1.296 -1.512,-4.68 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;font-family:Helvetica-Normal;-inkscape-font-specification:Helvetica-Normal;fill:#ffffff"
-         id="path243"
-         inkscape:connector-curvature="0" />
-    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot14"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion16"><rect
+           id="rect18"
+           width="138.64343"
+           height="54.800774"
+           x="42.678944"
+           y="16.149738" /></flowRegion><flowPara
+         id="flowPara20"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot22"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion24"><rect
+           id="rect26"
+           width="194.70691"
+           height="93.69165"
+           x="32.072342"
+           y="1.5025257" /></flowRegion><flowPara
+         id="flowPara28"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:26.61660576px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.66541511"
+       x="28.04562"
+       y="403.39346"
+       id="text47"><tspan
+         sodipodi:role="line"
+         id="tspan45"
+         x="28.04562"
+         y="403.39346"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';fill:#ffffff;stroke-width:0.66541511">EagleEye</tspan></text>
   </g>
 </svg>

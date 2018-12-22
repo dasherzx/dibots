@@ -57,7 +57,7 @@ export default new Datasource('es', {
     {
       name: 'kibana',
       types: ['boolean', 'null'],
-      help: 'Respect filters on DiBots dashboards. Only has an effect when using on DiBots dashboards'
+      help: 'Respect filters on EagleEye dashboards. Only has an effect when using on EagleEye dashboards'
     },
     {
       name: 'interval', // You really shouldn't use this, use the interval picker instead

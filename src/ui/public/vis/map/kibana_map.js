@@ -93,7 +93,7 @@ function makeLegendControl(container, kibanaMap, position) {
 }
 
 /**
- * Collects map functionality required for DiBots.
+ * Collects map functionality required for EagleEye.
  * Serves as simple abstraction for leaflet as well.
  */
 export class KibanaMap extends EventEmitter {

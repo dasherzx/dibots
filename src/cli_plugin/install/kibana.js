@@ -61,7 +61,7 @@ export function assertVersion(settings) {
   const actual = cleanVersion(settings.plugins[0].kibanaVersion);
   const expected = cleanVersion(settings.version);
   if (!versionSatisfies(actual, expected)) {
-    throw new Error (`Incorrect DiBots version in plugin [${settings.plugins[0].name}]. ` +
+    throw new Error (`Incorrect EagleEye version in plugin [${settings.plugins[0].name}]. ` +
       `Expected [${expected}]; found [${actual}]`);
   }
 }

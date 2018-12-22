@@ -24,7 +24,7 @@ import { Keystore } from '../server/keystore';
 import { list } from './list';
 import Logger from '../cli_plugin/lib/logger';
 
-describe('DiBots keystore', () => {
+describe('EagleEye keystore', () => {
   describe('list', () => {
     const sandbox = sinon.createSandbox();
 
@@ -61,7 +61,7 @@ describe('DiBots keystore', () => {
       list(keystore);
 
       sinon.assert.calledOnce(Logger.prototype.error);
-      sinon.assert.calledWith(Logger.prototype.error, 'ERROR: DiBots keystore not found. Use \'create\' command to create one.');
+      sinon.assert.calledWith(Logger.prototype.error, 'ERROR: EagleEye keystore not found. Use \'create\' command to create one.');
     });
   });
 });

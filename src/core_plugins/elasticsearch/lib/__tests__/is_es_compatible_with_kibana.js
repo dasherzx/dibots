@@ -24,15 +24,15 @@ import isEsCompatibleWithKibana from '../is_es_compatible_with_kibana';
 describe('plugins/elasticsearch', () => {
   describe('lib/is_es_compatible_with_kibana', () => {
     describe('returns false', () => {
-      it('when ES major is greater than DiBots major', () => {
+      it('when ES major is greater than EagleEye major', () => {
         expect(isEsCompatibleWithKibana('1.0.0', '0.0.0')).to.be(false);
       });
 
-      it('when ES major is less than DiBots major', () => {
+      it('when ES major is less than EagleEye major', () => {
         expect(isEsCompatibleWithKibana('0.0.0', '1.0.0')).to.be(false);
       });
 
-      it('when majors are equal, but ES minor is less than DiBots minor', () => {
+      it('when majors are equal, but ES minor is less than EagleEye minor', () => {
         expect(isEsCompatibleWithKibana('1.0.0', '1.1.0')).to.be(false);
       });
     });
@@ -42,15 +42,15 @@ describe('plugins/elasticsearch', () => {
         expect(isEsCompatibleWithKibana('1.1.1', '1.1.1')).to.be(true);
       });
 
-      it('when majors are equal, and ES minor is greater than DiBots minor', () => {
+      it('when majors are equal, and ES minor is greater than EagleEye minor', () => {
         expect(isEsCompatibleWithKibana('1.1.0', '1.0.0')).to.be(true);
       });
 
-      it('when majors and minors are equal, and ES patch is greater than DiBots patch', () => {
+      it('when majors and minors are equal, and ES patch is greater than EagleEye patch', () => {
         expect(isEsCompatibleWithKibana('1.1.1', '1.1.0')).to.be(true);
       });
 
-      it('when majors and minors are equal, but ES patch is less than DiBots patch', () => {
+      it('when majors and minors are equal, but ES patch is less than EagleEye patch', () => {
         expect(isEsCompatibleWithKibana('1.1.0', '1.1.1')).to.be(true);
       });
     });

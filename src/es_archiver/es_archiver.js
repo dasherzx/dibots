@@ -113,7 +113,7 @@ export class EsArchiver {
   }
 
   /**
-   *  Delete any DiBots indices, and initialize the DiBots index as DiBots would do
+   *  Delete any EagleEye indices, and initialize the EagleEye index as EagleEye would do
    *  on startup.
    *
    *  @return Promise

@@ -25,7 +25,7 @@ import { create } from './create';
 import Logger from '../cli_plugin/lib/logger';
 import * as prompt from '../server/utils/prompt';
 
-describe('DiBots keystore', () => {
+describe('EagleEye keystore', () => {
   describe('create', () => {
     const sandbox = sinon.createSandbox();
 
@@ -65,7 +65,7 @@ describe('DiBots keystore', () => {
       await create(keystore);
 
       sinon.assert.calledOnce(Logger.prototype.log);
-      sinon.assert.calledWith(Logger.prototype.log, `Created DiBots keystore in ${path}`);
+      sinon.assert.calledWith(Logger.prototype.log, `Created EagleEye keystore in ${path}`);
     });
 
     it('prompts for overwrite', async () => {
@@ -77,7 +77,7 @@ describe('DiBots keystore', () => {
       sinon.assert.calledOnce(prompt.confirm);
       const { args } = prompt.confirm.getCall(0);
 
-      expect(args[0]).toEqual('A DiBots keystore already exists. Overwrite?');
+      expect(args[0]).toEqual('A EagleEye keystore already exists. Overwrite?');
     });
 
     it('aborts if overwrite is denied', async () => {

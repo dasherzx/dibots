@@ -65,21 +65,21 @@ export default async function manageUuid(server) {
     // data uuid found
     if (serverConfigUuid === dataFileUuid) {
       // config uuid exists, data uuid exists and matches
-      logToServer(`DiBots instance UUID: ${dataFileUuid}`);
+      logToServer(`EagleEye instance UUID: ${dataFileUuid}`);
       return;
     }
 
     if (!serverConfigUuid) {
       // config uuid missing, data uuid exists
       serverConfigUuid = dataFileUuid;
-      logToServer(`Resuming persistent DiBots instance UUID: ${serverConfigUuid}`);
+      logToServer(`Resuming persistent EagleEye instance UUID: ${serverConfigUuid}`);
       config.set('server.uuid', serverConfigUuid);
       return;
     }
 
     if (serverConfigUuid !== dataFileUuid) {
       // config uuid exists, data uuid exists but mismatches
-      logToServer(`Updating DiBots instance UUID to: ${serverConfigUuid} (was: ${dataFileUuid})`);
+      logToServer(`Updating EagleEye instance UUID to: ${serverConfigUuid} (was: ${dataFileUuid})`);
       return writeUuid(serverConfigUuid);
     }
   }
@@ -92,6 +92,6 @@ export default async function manageUuid(server) {
     config.set('server.uuid', serverConfigUuid);
   }
 
-  logToServer(`Setting new DiBots instance UUID: ${serverConfigUuid}`);
+  logToServer(`Setting new EagleEye instance UUID: ${serverConfigUuid}`);
   return writeUuid(serverConfigUuid);
 }

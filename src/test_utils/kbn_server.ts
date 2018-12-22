@@ -111,7 +111,7 @@ export function createRootWithCorePlugins(settings = {}) {
 }
 
 /**
- * Returns `kbnServer` instance used in the "legacy" DiBots.
+ * Returns `kbnServer` instance used in the "legacy" EagleEye.
  * @param root
  */
 export function getKbnServer(root: Root) {

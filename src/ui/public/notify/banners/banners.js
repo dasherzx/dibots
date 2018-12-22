@@ -121,6 +121,6 @@ export class Banners {
 }
 
 /**
- * A singleton instance meant to represent all DiBots banners.
+ * A singleton instance meant to represent all EagleEye banners.
  */
 export const banners = new Banners();

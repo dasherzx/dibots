@@ -24,7 +24,7 @@ exports[`render 1`] = `
     >
       <h2>
         <FormattedMessage
-          defaultMessage="DiBots status is {kibanaStatus}"
+          defaultMessage="EagleEye status is {kibanaStatus}"
           id="statusPage.serverStatus.statusTitle"
           values={
             Object {

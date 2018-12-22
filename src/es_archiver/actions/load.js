@@ -86,7 +86,7 @@ export async function loadAction({ name, skipExisting, client, dataDir, log, kib
     index: indicesToRefresh
   });
 
-  // If we affected the DiBots index, we need to ensure it's migrated...
+  // If we affected the EagleEye index, we need to ensure it's migrated...
   if (Object.keys(result).some(k => k.startsWith('.kibana'))) {
     await migrateKibanaIndex({ client, log });
   }

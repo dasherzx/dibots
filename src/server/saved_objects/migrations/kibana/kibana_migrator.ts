@@ -18,7 +18,7 @@
  */
 
 /*
- * This file contains the logic for managing the DiBots index version
+ * This file contains the logic for managing the EagleEye index version
  * (the shape of the mappings and documents in the index).
  */
 
@@ -58,14 +58,14 @@ interface ElasticsearchPlugin {
 }
 
 /**
- * Manages the shape of mappings and documents in the DiBots index.
+ * Manages the shape of mappings and documents in the EagleEye index.
  *
  * @export
  * @class KibanaMigrator
  */
 export class KibanaMigrator {
   /**
-   * Migrates the mappings and documents in the DiBots index. This will run only
+   * Migrates the mappings and documents in the EagleEye index. This will run only
    * once and subsequent calls will return the result of the original call.
    *
    * @returns
@@ -115,7 +115,7 @@ export class KibanaMigrator {
    * Creates an instance of KibanaMigrator.
    *
    * @param opts
-   * @prop {KbnServer} kbnServer - An instance of the DiBots server object.
+   * @prop {KbnServer} kbnServer - An instance of the EagleEye server object.
    * @memberof KibanaMigrator
    */
   constructor({ kbnServer }: { kbnServer: KbnServer }) {
@@ -134,7 +134,7 @@ export class KibanaMigrator {
   }
 
   /**
-   * Gets the index mappings defined by DiBots's. enabled plugins.
+   * Gets the index mappings defined by EagleEye's. enabled plugins.
    *
    * @returns
    * @memberof KibanaMigrator

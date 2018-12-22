@@ -1,6 +1,6 @@
 # dev/build
 
-Build the default and OSS distributables of DiBots.
+Build the default and OSS distributables of EagleEye.
 
 # Quick Start
 

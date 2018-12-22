@@ -120,7 +120,7 @@ export default class BaseOptimizer {
      * Adds a cache loader if we're running in dev mode. The reason we're not adding
      * the cache-loader when running in production mode is that it creates cache
      * files in optimize/.cache that are not necessary for distributable versions
-     * of DiBots and just make compressing and extracting it more difficult.
+     * of EagleEye and just make compressing and extracting it more difficult.
      */
     const maybeAddCacheLoader = (cacheName, loaders) => {
       if (IS_KIBANA_DISTRIBUTABLE) {

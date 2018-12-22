@@ -106,7 +106,7 @@ export function SearchPollProvider(Private, Promise) {
           }
         })
         .catch(err => {
-          // If there was a problem, then kill DiBots.
+          // If there was a problem, then kill EagleEye.
           fatalError(err);
         });
     };

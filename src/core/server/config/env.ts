@@ -67,12 +67,12 @@ export class Env {
   public readonly staticFilesDir: string;
 
   /**
-   * Information about DiBots package (version, build number etc.).
+   * Information about EagleEye package (version, build number etc.).
    */
   public readonly packageInfo: Readonly<PackageInfo>;
 
   /**
-   * Mode DiBots currently run in (development or production).
+   * Mode EagleEye currently run in (development or production).
    */
   public readonly mode: Readonly<EnvironmentMode>;
 
@@ -87,7 +87,7 @@ export class Env {
   public readonly configs: ReadonlyArray<string>;
 
   /**
-   * Indicates that this DiBots instance is run as development Node Cluster master.
+   * Indicates that this EagleEye instance is run as development Node Cluster master.
    */
   public readonly isDevClusterMaster: boolean;
 

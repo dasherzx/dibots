@@ -40,7 +40,7 @@ export const ScriptingDisabledCallOut = ({
           <FormattedMessage
             id="common.ui.fieldEditor.disabledCallOutLabel"
             defaultMessage="All inline scripting has been disabled in Elasticsearch. You must enable inline scripting for at least one
-            language in order to use scripted fields in DiBots."
+            language in order to use scripted fields in EagleEye."
           />
         </p>
       </EuiCallOut>

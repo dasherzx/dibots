@@ -23,7 +23,7 @@ import PropTypes from 'prop-types';
 import './global_banner_list.less';
 
 /**
- * GlobalBannerList is a list of "banners". A banner something that is displayed at the top of DiBots that may or may not disappear.
+ * GlobalBannerList is a list of "banners". A banner something that is displayed at the top of EagleEye that may or may not disappear.
  *
  * Whether or not a banner can be closed is completely up to the author of the banner. Some banners make sense to be static, such as
  * banners meant to indicate the sensitivity (e.g., classification) of the information being represented.

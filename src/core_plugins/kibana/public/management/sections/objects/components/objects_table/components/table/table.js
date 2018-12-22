@@ -177,7 +177,7 @@ class TableUI extends PureComponent {
             description:
               intl.formatMessage({
                 id: 'kbn.management.objects.objectsTable.table.columnActions.viewInAppActionDescription',
-                defaultMessage: 'View this saved object within DiBots'
+                defaultMessage: 'View this saved object within EagleEye'
               }),
             type: 'icon',
             icon: 'eye',

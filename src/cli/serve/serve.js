@@ -178,7 +178,7 @@ export default function (program) {
 
   if (XPACK_OPTIONAL) {
     command
-      .option('--oss', 'Start DiBots without X-Pack');
+      .option('--oss', 'Start EagleEye without X-Pack');
   }
 
   if (CAN_CLUSTER) {

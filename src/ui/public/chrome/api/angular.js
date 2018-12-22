@@ -86,7 +86,7 @@ export function initAngularApi(chrome, internals) {
           try {
             if (urlOverflow.check($location.absUrl()) <= URL_LIMIT_WARN_WITHIN) {
               toastNotifications.addWarning({
-                title: 'The URL is big and DiBots might stop working',
+                title: 'The URL is big and EagleEye might stop working',
                 text: (
                   <Fragment>
                     Either enable the <code>state:storeInSessionStorage</code> option
@@ -100,7 +100,7 @@ export function initAngularApi(chrome, internals) {
             window.location.href = modifyUrl(window.location.href, parts => {
               parts.hash = '#/error/url-overflow';
             });
-            // force the browser to reload to that DiBots's. potentially unstable state is unloaded
+            // force the browser to reload to that EagleEye's. potentially unstable state is unloaded
             window.location.reload();
           }
         };

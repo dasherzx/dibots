@@ -131,7 +131,7 @@ async function getKibanaStatuses({ kibanaUrl }) {
     });
     return payload.status.statuses;
   } catch (error) {
-    throw new Error(`Unable to fetch DiBots status API response from DiBots at ${kibanaUrl}`);
+    throw new Error(`Unable to fetch EagleEye status API response from EagleEye at ${kibanaUrl}`);
   }
 }
 

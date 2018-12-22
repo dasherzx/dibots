@@ -24,7 +24,7 @@ exports[`apmUiEnabled 1`] = `
       >
         <h3>
           <FormattedMessage
-            defaultMessage="Add Data to DiBots"
+            defaultMessage="Add Data to EagleEye"
             id="kbn.home.addData.addDataToKibanaTitle"
             values={Object {}}
           />
@@ -242,7 +242,7 @@ exports[`apmUiEnabled 1`] = `
           type="button"
         >
           <FormattedMessage
-            defaultMessage="Load a data set and a DiBots dashboard"
+            defaultMessage="Load a data set and a EagleEye dashboard"
             id="kbn.home.addData.sampleDataLink"
             values={Object {}}
           />
@@ -317,7 +317,7 @@ exports[`isNewKibanaInstance 1`] = `
       >
         <h3>
           <FormattedMessage
-            defaultMessage="Add Data to DiBots"
+            defaultMessage="Add Data to EagleEye"
             id="kbn.home.addData.addDataToKibanaTitle"
             values={Object {}}
           />
@@ -499,7 +499,7 @@ exports[`isNewKibanaInstance 1`] = `
           type="button"
         >
           <FormattedMessage
-            defaultMessage="Load a data set and a DiBots dashboard"
+            defaultMessage="Load a data set and a EagleEye dashboard"
             id="kbn.home.addData.sampleDataLink"
             values={Object {}}
           />
@@ -574,7 +574,7 @@ exports[`mlEnabled 1`] = `
       >
         <h3>
           <FormattedMessage
-            defaultMessage="Add Data to DiBots"
+            defaultMessage="Add Data to EagleEye"
             id="kbn.home.addData.addDataToKibanaTitle"
             values={Object {}}
           />
@@ -792,7 +792,7 @@ exports[`mlEnabled 1`] = `
           type="button"
         >
           <FormattedMessage
-            defaultMessage="Load a data set and a DiBots dashboard"
+            defaultMessage="Load a data set and a EagleEye dashboard"
             id="kbn.home.addData.sampleDataLink"
             values={Object {}}
           />
@@ -907,7 +907,7 @@ exports[`render 1`] = `
       >
         <h3>
           <FormattedMessage
-            defaultMessage="Add Data to DiBots"
+            defaultMessage="Add Data to EagleEye"
             id="kbn.home.addData.addDataToKibanaTitle"
             values={Object {}}
           />
@@ -1089,7 +1089,7 @@ exports[`render 1`] = `
           type="button"
         >
           <FormattedMessage
-            defaultMessage="Load a data set and a DiBots dashboard"
+            defaultMessage="Load a data set and a EagleEye dashboard"
             id="kbn.home.addData.sampleDataLink"
             values={Object {}}
           />

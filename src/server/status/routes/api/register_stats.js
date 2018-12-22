@@ -23,7 +23,7 @@ import { wrapAuthConfig } from '../../wrap_auth_config';
 import { KIBANA_STATS_TYPE } from '../../constants';
 
 /*
- * API for DiBots meta info and accumulated operations stats
+ * API for EagleEye meta info and accumulated operations stats
  * Including ?extended in the query string fetches Elasticsearch cluster_uuid and server.usage.collectorSet data
  * - Requests to set isExtended = true
  *      GET /api/stats?extended=true
@@ -123,7 +123,7 @@ export function registerStatsApi(kbnServer, server, config) {
         }
 
         /* kibana_stats gets singled out from the collector set as it is used
-         * for health-checking DiBots and fetch does not rely on fetching data
+         * for health-checking EagleEye and fetch does not rely on fetching data
          * from ES */
         const kibanaStatsCollector = collectorSet.getCollectorByType(KIBANA_STATS_TYPE);
         let kibanaStats = await kibanaStatsCollector.fetch();

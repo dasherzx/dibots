@@ -47,13 +47,13 @@ export function getUiSettingDefaults() {
     'k7design': {
       name: 'Use the new K7 UI design',
       value: false,
-      description: `When set, DiBots will use the new K7 design targeted for release in 7.0. At this time, not all features are
+      description: `When set, EagleEye will use the new K7 design targeted for release in 7.0. At this time, not all features are
         implemented.`,
     },
     'search:queryLanguage': {
       name: 'Query language',
       value: 'lucene',
-      description: `Query language used by the query bar. Kuery is an experimental new language built specifically for DiBots.`,
+      description: `Query language used by the query bar. Kuery is an experimental new language built specifically for EagleEye.`,
       type: 'select',
       options: ['lucene', 'kuery']
     },
@@ -198,7 +198,7 @@ export function getUiSettingDefaults() {
       type: 'number',
       description: `Controls the <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-multi-search.html"
         target="_blank" rel="noopener noreferrer">max_concurrent_shard_requests</a>
-        setting used for _msearch requests sent by DiBots. Set to 0 to disable this config and use the Elasticsearch default.`,
+        setting used for _msearch requests sent by EagleEye. Set to 0 to disable this config and use the Elasticsearch default.`,
       category: ['search'],
     },
     'fields:popularLimit': {
@@ -383,7 +383,7 @@ export function getUiSettingDefaults() {
   "mode": "quick"
 }`,
       type: 'json',
-      description: `The timefilter selection to use when DiBots is started without one`
+      description: `The timefilter selection to use when EagleEye is started without one`
     },
     'timepicker:refreshIntervalDefaults': {
       name: 'Time picker refresh interval',
@@ -529,7 +529,7 @@ export function getUiSettingDefaults() {
       name: 'Disable Animations',
       value: false,
       description: `
-        Turn off all unnecessary animations in the DiBots UI. Refresh the page to apply the changes.
+        Turn off all unnecessary animations in the EagleEye UI. Refresh the page to apply the changes.
       `,
       category: ['accessibility'],
     },

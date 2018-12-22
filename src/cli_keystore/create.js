@@ -24,7 +24,7 @@ export async function create(keystore, command, options) {
   const logger = new Logger(options);
 
   if (keystore.exists()) {
-    const overwrite = await confirm('A DiBots keystore already exists. Overwrite?');
+    const overwrite = await confirm('A EagleEye keystore already exists. Overwrite?');
 
     if (!overwrite) {
       return logger.log('Exiting without modifying keystore.');
@@ -34,13 +34,13 @@ export async function create(keystore, command, options) {
   keystore.reset();
   keystore.save();
 
-  logger.log(`Created DiBots keystore in ${keystore.path}`);
+  logger.log(`Created EagleEye keystore in ${keystore.path}`);
 }
 
 export function createCli(program, keystore) {
   program
     .command('create')
-    .description('Creates a new DiBots keystore')
+    .description('Creates a new EagleEye keystore')
     .option('-s, --silent', 'prevent all logging')
     .action(create.bind(null, keystore));
 }

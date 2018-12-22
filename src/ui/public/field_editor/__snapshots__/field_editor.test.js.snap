@@ -851,7 +851,7 @@ exports[`FieldEditor should show deprecated lang warning 1`] = `
           </strong>
            
           <FormattedMessage
-            defaultMessage="{language} is deprecated and support will be removed in the next major version of DiBots and Elasticsearch. We recommend using {painlessLink} for new scripted fields."
+            defaultMessage="{language} is deprecated and support will be removed in the next major version of EagleEye and Elasticsearch. We recommend using {painlessLink} for new scripted fields."
             id="common.ui.fieldEditor.warningLabel.warningDetail"
             values={
               Object {

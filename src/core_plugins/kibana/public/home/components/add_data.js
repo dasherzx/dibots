@@ -173,7 +173,7 @@ const AddDataUi = ({ apmUiEnabled, isNewKibanaInstance, intl, mlEnabled }) => {
             <h3>
               <FormattedMessage
                 id="kbn.home.addData.addDataToKibanaTitle"
-                defaultMessage="Add Data to DiBots"
+                defaultMessage="Add Data to EagleEye"
               />
             </h3>
           </EuiTitle>
@@ -209,7 +209,7 @@ const AddDataUi = ({ apmUiEnabled, isNewKibanaInstance, intl, mlEnabled }) => {
             >
               <FormattedMessage
                 id="kbn.home.addData.sampleDataLink"
-                defaultMessage="Load a data set and a DiBots dashboard"
+                defaultMessage="Load a data set and a EagleEye dashboard"
               />
             </EuiLink>
           </EuiText>

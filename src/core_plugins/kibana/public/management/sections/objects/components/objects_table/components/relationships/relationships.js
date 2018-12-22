@@ -242,7 +242,7 @@ class RelationshipsUI extends Component {
                       }),
                       description: intl.formatMessage({
                         id: 'kbn.management.objects.objectsTable.relationships.columnActions.inAppDescription',
-                        defaultMessage: 'View this saved object within DiBots'
+                        defaultMessage: 'View this saved object within EagleEye'
                       }),
                       icon: 'eye',
                       onClick: object => goInApp(object.id, type),

@@ -258,10 +258,10 @@ export class DashboardListing extends React.Component {
           body={
             <Fragment>
               <p>
-                You can combine data views from any DiBots app into one dashboard and see everything in one place.
+                You can combine data views from any EagleEye app into one dashboard and see everything in one place.
               </p>
               <p>
-                New to DiBots? <EuiLink href="#/home/tutorial_directory/sampleData">Install some sample data</EuiLink> to take a test drive.
+                New to EagleEye? <EuiLink href="#/home/tutorial_directory/sampleData">Install some sample data</EuiLink> to take a test drive.
               </p>
             </Fragment>
           }

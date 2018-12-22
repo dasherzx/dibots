@@ -1,6 +1,6 @@
 # UI Systems
 
-In this directory you'll find various UI systems you can use to craft effective user experiences within DiBots.
+In this directory you'll find various UI systems you can use to craft effective user experiences within EagleEye.
 
 ## ui/notify
 

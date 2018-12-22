@@ -27,7 +27,7 @@ export function VislibComponentsLabelsLabelsProvider(Private) {
   const getArrOfUniqLabels = Private(VislibComponentsLabelsUniqLabelsProvider);
 
   /*
-   * Accepts a DiBots data object and returns an array of unique labels (strings).
+   * Accepts a EagleEye data object and returns an array of unique labels (strings).
    * Extracts the field formatter from the raw object and passes it to the
    * getArrOfUniqLabels function.
    *

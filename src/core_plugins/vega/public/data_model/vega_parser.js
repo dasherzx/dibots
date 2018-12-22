@@ -29,7 +29,7 @@ import { EmsFileParser } from './ems_file_parser';
 import { UrlParser } from './url_parser';
 import { VISUALIZATION_COLORS } from '@elastic/eui';
 
-// Set default single color to match other DiBots visualizations
+// Set default single color to match other EagleEye visualizations
 const defaultColor = VISUALIZATION_COLORS[0];
 
 const DEFAULT_SCHEMA = 'https://vega.github.io/schema/vega/v3.0.json';
@@ -64,7 +64,7 @@ export class VegaParser {
     try {
       await this._parseAsync();
     } catch (err) {
-      // if we reject current promise, it will use the standard DiBots error handling
+      // if we reject current promise, it will use the standard EagleEye error handling
       this.error = Utils.formatErrorToStr(err);
     }
     return this;

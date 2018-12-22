@@ -155,7 +155,7 @@ export class UiBundlesController {
       await del(this.resolvePath('*'), {
         // since we know that `this.resolvePath()` is going to return an absolute path based on the `optimize.bundleDir`
         // and since we don't want to require that users specify a bundleDir that is within the cwd or limit the cwd
-        // directory used to run DiBots in any way we use force here
+        // directory used to run EagleEye in any way we use force here
         force: true
       });
     }

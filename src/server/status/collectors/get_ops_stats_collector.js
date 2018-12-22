@@ -22,7 +22,7 @@ import { KIBANA_STATS_TYPE } from '../constants';
 import { getKibanaInfoForStats } from '../lib';
 
 /*
- * Initialize a collector for DiBots Ops Stats
+ * Initialize a collector for EagleEye Ops Stats
  *
  * NOTE this collector's fetch method returns the latest stats from the
  * Hapi/Good/Even-Better ops event listener. Therefore, the stats reset

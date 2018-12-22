@@ -87,7 +87,7 @@ FeatureCatalogueRegistryProvider.register(() => {
   return {
     id: 'advanced_settings',
     title: 'Advanced Settings',
-    description: 'Directly edit settings that control behavior in DiBots.',
+    description: 'Directly edit settings that control behavior in EagleEye.',
     icon: 'advancedSettingsApp',
     path: '/app/kibana#/management/kibana/settings',
     showOnHomePage: false,

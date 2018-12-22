@@ -118,7 +118,7 @@ export class Control {
   }
 
   /*
-   * Remove any user changes to value by resetting value to that as provided by DiBots filter pills
+   * Remove any user changes to value by resetting value to that as provided by EagleEye filter pills
    */
   reset() {
     this._kbnFilter = null;

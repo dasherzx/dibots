@@ -139,7 +139,7 @@ class FlyoutUI extends Component {
     ).map(doc => ({
       ...doc,
       // The server assumes that documents with no migrationVersion are up to date.
-      // That assumption enables DiBots and other API consumers to not have to build
+      // That assumption enables EagleEye and other API consumers to not have to build
       // up migrationVersion prior to creating new objects. But it means that imports
       // need to set migrationVersion to something other than undefined, so that imported
       // docs are not seen as automatically up-to-date.

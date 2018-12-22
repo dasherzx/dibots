@@ -188,7 +188,7 @@ export const savedObjects = [
     "version": 1,
     "attributes": {
       "title": "[Logs] Markdown Instructions",
-      "visState": "{\"title\":\"[Logs] Markdown Instructions\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"openLinksInNewTab\":true,\"markdown\":\"### Sample Logs Data\\nThis dashboard contains sample data for you to play with. You can view it, search it, and interact with the visualizations. For more information about DiBots, check our [docs](https://www.elastic.co/guide/en/kibana/current/index.html).\"},\"aggs\":[]}",
+      "visState": "{\"title\":\"[Logs] Markdown Instructions\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"openLinksInNewTab\":true,\"markdown\":\"### Sample Logs Data\\nThis dashboard contains sample data for you to play with. You can view it, search it, and interact with the visualizations. For more information about EagleEye, check our [docs](https://www.elastic.co/guide/en/kibana/current/index.html).\"},\"aggs\":[]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,

@@ -25,7 +25,7 @@ import { Config, ConfigService, Env } from '../config';
 import { Logger, LoggerFactory, LoggingConfig, LoggingService } from '../logging';
 
 /**
- * Top-level entry point to kick off the app and start the DiBots server.
+ * Top-level entry point to kick off the app and start the EagleEye server.
  */
 export class Root {
   public readonly logger: LoggerFactory;
@@ -66,7 +66,7 @@ export class Root {
     if (reason) {
       if (reason.code === 'EADDRINUSE' && Number.isInteger(reason.port)) {
         reason = new Error(
-          `Port ${reason.port} is already in use. Another instance of DiBots may be running!`
+          `Port ${reason.port} is already in use. Another instance of EagleEye may be running!`
         );
       }
 

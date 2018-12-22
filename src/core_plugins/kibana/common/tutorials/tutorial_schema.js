@@ -36,7 +36,7 @@ const artifactsSchema = Joi.object({
   exportedFields: Joi.object({
     documentationUrl: Joi.string().required()
   }),
-  // DiBots dashboards created by this product.
+  // EagleEye dashboards created by this product.
   dashboards: Joi.array().items(dashboardSchema).required(),
   application: Joi.object({
     path: Joi.string().required(),

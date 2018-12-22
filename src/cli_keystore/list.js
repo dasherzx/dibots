@@ -23,7 +23,7 @@ export function list(keystore, command, options = {}) {
   const logger = new Logger(options);
 
   if (!keystore.exists()) {
-    return logger.error('ERROR: DiBots keystore not found. Use \'create\' command to create one.');
+    return logger.error('ERROR: EagleEye keystore not found. Use \'create\' command to create one.');
   }
 
   const keys = keystore.keys();

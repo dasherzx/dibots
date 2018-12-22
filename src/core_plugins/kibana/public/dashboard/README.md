@@ -23,7 +23,7 @@ A high level walk through of types of dashboard state and how dashboard and
   function `onEmbeddableStateChanged` that is passed in to the `EmbeddableFactory.create` call.
 
 **Container state** - Data the dashboard gives to the embeddable throughout it's lifecycle
- as things update and the user interacts with DiBots. This is communicated to the embeddable via
+ as things update and the user interacts with EagleEye. This is communicated to the embeddable via
  the function `onContainerStateChanged` which is returned from the `EmbeddableFactory.create` call
 
 **Container metadata** - State that only needs to be given to the embeddable once, 

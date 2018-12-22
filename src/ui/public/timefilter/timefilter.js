@@ -179,10 +179,10 @@ function convertISO8601(stringTime) {
   return obj.isValid() ? obj : stringTime;
 }
 
-// Currently some parts of DiBots (index patterns, timefilter) rely on addSetupWork in the uiRouter
+// Currently some parts of EagleEye (index patterns, timefilter) rely on addSetupWork in the uiRouter
 // and require it to be executed to properly function.
 // This function is exposed for applications that do not use uiRoutes like APM
-// DiBots issue https://github.com/elastic/kibana/issues/19110 tracks the removal of this dependency on uiRouter
+// EagleEye issue https://github.com/elastic/kibana/issues/19110 tracks the removal of this dependency on uiRouter
 export const registerTimefilterWithGlobalState = _.once((globalState, $rootScope) => {
   const uiSettings = chrome.getUiSettingsClient();
   const timeDefaults = uiSettings.get('timepicker:timeDefaults');

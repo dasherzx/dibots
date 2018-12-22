@@ -26,15 +26,15 @@ export function kibanaMetricsSpecProvider(server, context) {
   return {
     id: 'kibanaMetrics',
     name: i18n.translate('kbn.server.tutorials.kibanaMetrics.nameTitle', {
-      defaultMessage: 'DiBots metrics',
+      defaultMessage: 'EagleEye metrics',
     }),
     isBeta: true,
     category: TUTORIAL_CATEGORY.METRICS,
     shortDescription: i18n.translate('kbn.server.tutorials.kibanaMetrics.shortDescription', {
-      defaultMessage: 'Fetch internal metrics from DiBots.',
+      defaultMessage: 'Fetch internal metrics from EagleEye.',
     }),
     longDescription: i18n.translate('kbn.server.tutorials.kibanaMetrics.longDescription', {
-      defaultMessage: 'The `kibana` Metricbeat module fetches internal metrics from DiBots. \
+      defaultMessage: 'The `kibana` Metricbeat module fetches internal metrics from EagleEye. \
 [Learn more]({learnMoreLink}).',
       values: {
         learnMoreLink: '{config.docs.beats.metricbeat}/metricbeat-module-kibana.html',

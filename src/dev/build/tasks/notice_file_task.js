@@ -33,7 +33,7 @@ export const CreateNoticeFileTask = {
     const noticeFromSource = await generateNoticeFromSource({
       productName: build.isOss()
         ? 'Kibana'
-        : 'DiBots with X-Pack',
+        : 'EagleEye with X-Pack',
       directory: build.resolvePath(),
       log,
     });

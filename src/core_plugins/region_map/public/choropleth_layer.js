@@ -147,7 +147,7 @@ export default class ChoroplethLayer extends KibanaMapLayer {
                           Make sure the file exists at that location.`;
         } else {
           errorMessage = `Cannot download ${geojsonUrl} file. Please ensure the
-CORS configuration of the server permits requests from the DiBots application on this host.`;
+CORS configuration of the server permits requests from the EagleEye application on this host.`;
         }
 
         toastNotifications.addDanger({

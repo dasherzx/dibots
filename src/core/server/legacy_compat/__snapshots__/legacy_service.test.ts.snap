@@ -81,7 +81,7 @@ exports[`once LegacyService is started with connection info proxy route responds
 Object {
   "body": Array [
     Array [
-      "DiBots server is not ready yet",
+      "EagleEye server is not ready yet",
     ],
   ],
   "code": Array [

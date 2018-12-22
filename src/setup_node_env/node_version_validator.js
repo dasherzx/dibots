@@ -26,9 +26,9 @@ var rawRequiredVersion = (pkg && pkg.engines && pkg.engines.node) || null;
 var requiredVersion = rawRequiredVersion ? 'v' + rawRequiredVersion : rawRequiredVersion;
 var isVersionValid = !!currentVersion && !!requiredVersion && (currentVersion === requiredVersion);
 
-// Validates current the NodeJS version compatibility when DiBots starts.
+// Validates current the NodeJS version compatibility when EagleEye starts.
 if (!isVersionValid) {
-  var errorMessage = 'DiBots does not support the current Node.js version ' + currentVersion
+  var errorMessage = 'EagleEye does not support the current Node.js version ' + currentVersion
     + '. Please use Node.js ' + requiredVersion + '.';
 
   // Actions to apply when validation fails: error report + exit.

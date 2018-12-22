@@ -53,7 +53,7 @@ export function FetchNowProvider(Private, Promise) {
       return searchRequest.retry();
     }))
       .catch(error => {
-        // If any errors occur after the search requests have resolved, then we kill DiBots.
+        // If any errors occur after the search requests have resolved, then we kill EagleEye.
         fatalError(error, 'Courier fetch');
       });
   }
